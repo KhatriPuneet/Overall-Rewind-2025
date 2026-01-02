@@ -324,13 +324,26 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    padding: 16px 24px;
+    padding: 16px 32px;
+    min-width: 280px;
     background: rgba(43, 108, 238, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(43, 108, 238, 0.3);
     border-radius: 50px;
     box-shadow: 0 4px 20px rgba(43, 108, 238, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.swipe-to-open:hover {
+    background: rgba(43, 108, 238, 0.25);
+    border-color: rgba(43, 108, 238, 0.5);
+    transform: translateX(-50%) scale(1.02);
+}
+
+.swipe-to-open:active {
+    transform: translateX(-50%) scale(0.98);
 }
 
 .swipe-icon-container {

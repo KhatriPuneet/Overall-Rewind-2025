@@ -50,6 +50,13 @@ class WrappedApp {
         document.getElementById('replay-btn')?.addEventListener('click', () => {
             this.replay();
         });
+
+        // Swipe to open button
+        document.querySelector('.swipe-to-open')?.addEventListener('click', () => {
+            if (this.currentSlide === 0) {
+                this.nextSlide();
+            }
+        });
     }
 
     handleTouchStart(e) {
