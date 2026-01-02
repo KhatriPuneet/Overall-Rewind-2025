@@ -323,32 +323,27 @@ body {
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    gap: 0;
-    padding: 0;
-    width: auto;
-    max-width: 80px;
-    background: transparent;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: hidden;
-}
-
-.swipe-to-open.expanded {
     gap: 16px;
-    padding: 16px 32px 16px 16px;
-    max-width: 320px;
+    padding: 16px 32px;
+    min-width: 280px;
     background: rgba(43, 108, 238, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(43, 108, 238, 0.3);
+    border-radius: 50px;
     box-shadow: 0 4px 20px rgba(43, 108, 238, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.swipe-to-open.expanded:hover {
+.swipe-to-open:hover {
     background: rgba(43, 108, 238, 0.25);
     border-color: rgba(43, 108, 238, 0.5);
+    transform: translateX(-50%) scale(1.02);
+}
+
+.swipe-to-open:active {
+    transform: translateX(-50%) scale(0.98);
 }
 
 .swipe-icon-container {
@@ -356,16 +351,9 @@ body {
     align-items: center;
     gap: -8px;
     background: rgba(255, 255, 255, 0.95);
-    padding: 12px 16px;
-    border-radius: 12px;
+    padding: 8px 12px;
+    border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0;
-    transition: all 0.3s ease;
-}
-
-.swipe-to-open:not(.expanded) .swipe-icon-container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .swipe-chevron {
@@ -385,15 +373,6 @@ body {
     font-weight: 600;
     color: var(--text-white);
     letter-spacing: 0.02em;
-    white-space: nowrap;
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: all 0.3s ease 0.2s;
-}
-
-.swipe-to-open.expanded .swipe-text {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 @keyframes slideChevron {
