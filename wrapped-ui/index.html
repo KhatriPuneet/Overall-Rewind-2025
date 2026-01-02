@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>2023 Rewind</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Progress Bars -->
+        <div id="progress-bars" class="progress-container">
+            <div class="progress-bar" data-slide="0"></div>
+            <div class="progress-bar" data-slide="1"></div>
+            <div class="progress-bar" data-slide="2"></div>
+            <div class="progress-bar" data-slide="3"></div>
+            <div class="progress-bar" data-slide="4"></div>
+            <div class="progress-bar" data-slide="5"></div>
+            <div class="progress-bar" data-slide="6"></div>
+            <div class="progress-bar" data-slide="7"></div>
+            <div class="progress-bar" data-slide="8"></div>
+            <div class="progress-bar" data-slide="9"></div>
+            <div class="progress-bar" data-slide="10"></div>
+            <div class="progress-bar" data-slide="11"></div>
+        </div>
+
+        <!-- Sound Toggle -->
+        <button id="sound-toggle" class="sound-toggle" aria-label="Toggle sound">
+            <span class="material-symbols-outlined">volume_up</span>
+        </button>
+
+        <!-- GSAP Animated Background -->
+        <div id="gsap-background" class="gsap-background">
+            <div class="panel1"></div>
+            <div class="panel1"></div>
+            <div class="panel1"></div>
+            <div class="panel1"></div>
+            <div class="panel1"></div>
+            <div class="panel1"></div>
+            <div class="panel1"></div>
+            <div class="panel1"></div>
+            <div class="panel1"></div>
+            <div class="panel1"></div>
+            <div class="panel1"></div>
+            <div class="panel1"></div>
+            <div class="panel2"></div>
+            <div class="panel2"></div>
+            <div class="panel2"></div>
+            <div class="panel2"></div>
+            <div class="panel2"></div>
+            <div class="panel2"></div>
+            <div class="panel2"></div>
+            <div class="panel2"></div>
+            <div class="panel2"></div>
+            <div class="panel2"></div>
+            <div class="panel2"></div>
+            <div class="panel2"></div>
+        </div>
+
+        <!-- Slides Container -->
+        <div id="slides-container" class="slides-container">
+
+            <!-- Slide 0: Intro -->
+            <div class="slide active" data-slide="0" data-has-quiz="false">
+                <div class="slide-content intro-slide">
+                    <div class="intro-bg"></div>
+                    <div class="intro-content">
+                        <h1 class="intro-title">Your 2023<br><span class="gradient-text">Rewind</span></h1>
+                        <div class="swipe-indicator">
+                            <span class="material-symbols-outlined">swipe_up</span>
+                            <p>Swipe to begin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 1: Advisor Performance -->
+            <div class="slide" data-slide="1" data-has-quiz="true"
+                data-quiz-question="Guess the total advisor earnings this year?"
+                data-quiz-options='["50+ Cr", "75+ Cr", "100+ Cr", "125+ Cr"]' data-quiz-answer="2">
+                <div class="slide-content">
+                    <div class="slide-icon">
+                        <span class="material-symbols-outlined">groups</span>
+                    </div>
+                    <div class="slide-header">
+                        <h2 class="slide-title">The Numbers<br><span class="text-primary">Speak Volumes</span></h2>
+                        <p class="slide-subtitle">Your impact this year has been monumental.</p>
+                    </div>
+                    <div class="hero-stat glass-panel">
+                        <div class="stat-badge">Record Breaking</div>
+                        <div class="stat-number" data-count="100">0</div>
+                        <span class="stat-unit">+ Cr</span>
+                        <p class="stat-label">Total Advisor Earnings</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card glass-panel">
+                            <div class="stat-icon">
+                                <span class="material-symbols-outlined">groups</span>
+                            </div>
+                            <p class="stat-value" data-count="1240">0</p>
+                            <p class="stat-name">Active Advisors</p>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <div class="stat-icon purple">
+                                <span class="material-symbols-outlined">person_add</span>
+                            </div>
+                            <p class="stat-value">54k</p>
+                            <p class="stat-name">Unique Customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Geographic Impact -->
+            <div class="slide" data-slide="2" data-has-quiz="true" data-quiz-question="How many pincodes were served?"
+                data-quiz-options='["8,500", "10,200", "12,450", "15,000"]' data-quiz-answer="2">
+                <div class="slide-content">
+                    <div class="slide-icon">
+                        <span class="material-symbols-outlined">map</span>
+                    </div>
+                    <div class="hero-stat-center">
+                        <h1 class="mega-number" data-count="12450">0</h1>
+                        <p class="mega-label">Pincodes Served</p>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="info-cards">
+                        <div class="info-card glass-panel">
+                            <p class="info-label">Highest Growth</p>
+                            <h3 class="info-title">Karnataka</h3>
+                            <div class="growth-badge">
+                                <span class="material-symbols-outlined">arrow_upward</span>
+                                <span>140%</span>
+                            </div>
+                        </div>
+                        <div class="info-card glass-panel highlight">
+                            <div class="star-icon">
+                                <span class="material-symbols-outlined">star</span>
+                            </div>
+                            <p class="info-label">The Outlier</p>
+                            <h3 class="info-title"><span class="text-primary">Indore</span> surprised everyone</h3>
+                            <p class="info-desc">Top tier engagement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Product Highlights -->
+            <div class="slide" data-slide="3" data-has-quiz="true"
+                data-quiz-question="What was the top product category?"
+                data-quiz-options='["Personal Loans", "Credit Cards", "Insurance", "Investments"]' data-quiz-answer="1">
+                <div class="slide-content scrollable">
+                    <div class="slide-icon">
+                        <span class="material-symbols-outlined">credit_card</span>
+                    </div>
+                    <h1 class="slide-title-alt">Your Year<br><span class="gradient-text">in Products</span></h1>
+
+                    <div class="product-hero glass-panel">
+                        <div class="product-header">
+                            <div>
+                                <span class="product-badge">Top Category</span>
+                                <h2 class="product-name">Credit Cards</h2>
+                            </div>
+                            <div class="product-icon">
+                                <span class="material-symbols-outlined">credit_card</span>
+                            </div>
+                        </div>
+                        <div class="progress-stat">
+                            <div class="progress-info">
+                                <span>Total Volume</span>
+                                <span>84%</span>
+                            </div>
+                            <div class="progress-bar-fill">
+                                <div class="progress-fill" style="width: 84%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="top-products glass-panel">
+                        <h3 class="section-title">
+                            <span class="material-symbols-outlined">trophy</span>
+                            Top 5 Products
+                        </h3>
+                        <div class="product-list">
+                            <div class="product-item">
+                                <div class="product-rank">1</div>
+                                <span class="product-item-name">Visa Platinum</span>
+                                <span class="product-tag">Highest Vol</span>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-rank secondary">2</div>
+                                <span class="product-item-name">Amex Gold</span>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-rank secondary">3</div>
+                                <span class="product-item-name">Chase Sapphire</span>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-rank secondary">4</div>
+                                <span class="product-item-name">Capital One Venture</span>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-rank secondary">5</div>
+                                <span class="product-item-name">Citi Double Cash</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="speed-stat glass-panel">
+                        <div class="speed-icon">
+                            <span class="material-symbols-outlined">timer</span>
+                        </div>
+                        <p class="speed-label">Fastest Lead → Payout</p>
+                        <p class="speed-time">12<span class="time-unit">m</span> 30<span class="time-unit">s</span></p>
+                        <div class="speed-badge">
+                            <span class="material-symbols-outlined">trending_up</span>
+                            <span>15% faster than 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Advisor Spotlight -->
+            <div class="slide" data-slide="4" data-has-quiz="false">
+                <div class="slide-content">
+                    <div class="slide-icon">
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <h1 class="spotlight-title">Spotlight</h1>
+
+                    <div class="profile-card">
+                        <div class="avatar-container">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar">
+                                <div class="avatar-img"></div>
+                            </div>
+                            <div class="active-badge">
+                                <span class="material-symbols-outlined">check_circle</span>
+                                <span>12/12 Months Active</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h2 class="profile-name">Jane Doe</h2>
+                            <p class="profile-title">Consistent Advisor</p>
+                        </div>
+                        <div class="profile-description">
+                            <p>"Advisor who helped customers every single month this year without missing a beat."</p>
+                            <p class="profile-tagline">Consistency is key.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: User Activity -->
+            <div class="slide" data-slide="5" data-has-quiz="true" data-quiz-question="What was the most active day?"
+                data-quiz-options='["Monday", "Tuesday", "Wednesday", "Friday"]' data-quiz-answer="1">
+                <div class="slide-content">
+                    <div class="slide-icon">
+                        <span class="material-symbols-outlined">calendar_today</span>
+                    </div>
+
+                    <div class="activity-section">
+                        <p class="activity-badge">Most Active Day</p>
+                        <div class="slot-machine-container">
+                            <div class="slot-machine">
+                                <div class="slot-reel">
+                                    <div class="slot-item">Monday</div>
+                                    <div class="slot-item">Tuesday</div>
+                                    <div class="slot-item">Wednesday</div>
+                                    <div class="slot-item">Thursday</div>
+                                    <div class="slot-item">Friday</div>
+                                    <div class="slot-item">Saturday</div>
+                                    <div class="slot-item">Sunday</div>
+                                    <div class="slot-item">Monday</div>
+                                    <div class="slot-item">Tuesday</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="activity-day gradient-text final-day" style="display: none;">Tuesday</h1>
+
+                        <div class="bar-chart">
+                            <div class="bar-item">
+                                <div class="bar" style="height: 40%" data-height="40"></div>
+                                <span class="bar-label">M</span>
+                            </div>
+                            <div class="bar-item active">
+                                <div class="bar" style="height: 85%" data-height="85"></div>
+                                <div class="bar-tooltip">Top Day</div>
+                                <span class="bar-label">T</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar" style="height: 30%" data-height="30"></div>
+                                <span class="bar-label">W</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar" style="height: 60%" data-height="60"></div>
+                                <span class="bar-label">T</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar" style="height: 50%" data-height="50"></div>
+                                <span class="bar-label">F</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar" style="height: 75%" data-height="75"></div>
+                                <span class="bar-label">S</span>
+                            </div>
+                            <div class="bar-item">
+                                <div class="bar" style="height: 20%" data-height="20"></div>
+                                <span class="bar-label">S</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider-line"></div>
+
+                    <div class="activity-section">
+                        <p class="activity-badge">Most Active Time</p>
+                        <div class="time-display">
+                            <h2 class="time-number gradient-text">9:00</h2>
+                            <span class="time-period">PM</span>
+                        </div>
+
+                        <div class="time-chart">
+                            <div class="time-line"></div>
+                            <div class="time-markers">
+                                <span>6 PM</span>
+                                <span class="active">9 PM</span>
+                                <span>12 AM</span>
+                            </div>
+                            <div class="time-curve">
+                                <div class="curve-bar" style="height: 20%"></div>
+                                <div class="curve-bar" style="height: 40%"></div>
+                                <div class="curve-bar" style="height: 70%"></div>
+                                <div class="curve-bar" style="height: 90%"></div>
+                                <div class="curve-bar peak" style="height: 100%"></div>
+                                <div class="curve-bar" style="height: 90%"></div>
+                                <div class="curve-bar" style="height: 70%"></div>
+                                <div class="curve-bar" style="height: 40%"></div>
+                                <div class="curve-bar" style="height: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Interesting Facts -->
+            <div class="slide" data-slide="6" data-has-quiz="false">
+                <div class="slide-content scrollable">
+                    <div class="slide-icon">
+                        <span class="material-symbols-outlined">lightbulb</span>
+                    </div>
+
+                    <div class="fact-section">
+                        <div class="fact-header">
+                            <div class="fact-icon">
+                                <span class="material-symbols-outlined">link</span>
+                            </div>
+                            <span class="fact-badge">Top Connector</span>
+                        </div>
+                        <h1 class="fact-number" data-count="123">0</h1>
+                        <p class="fact-title">Users Referred</p>
+                        <p class="fact-desc">Your network is growing. <span class="highlight">ABC from XYZ</span> helped
+                            you reach a new milestone this year.</p>
+                    </div>
+
+                    <div class="divider-line"></div>
+
+                    <div class="fact-section-small">
+                        <div class="fact-header-small">
+                            <span class="material-symbols-outlined">bedtime</span>
+                            <span>Night Owl Award</span>
+                        </div>
+                        <div class="fact-value">
+                            <span class="fact-big">4:03</span>
+                            <span class="fact-small">am</span>
+                        </div>
+                        <p class="fact-desc-small">Most productive hour. You applied for a credit card while the world
+                            slept.</p>
+                    </div>
+
+                    <div class="divider-line"></div>
+
+                    <div class="fact-section-small">
+                        <div class="fact-header-small">
+                            <span class="material-symbols-outlined">local_fire_department</span>
+                            <span>On Fire</span>
+                        </div>
+                        <div class="fact-value">
+                            <span class="fact-big" data-count="14">0</span>
+                            <span class="fact-small">Days</span>
+                        </div>
+                        <p class="fact-desc-small">Your longest continuous activity streak. Consistent effort pays off.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Payment Preferences -->
+            <div class="slide" data-slide="7" data-has-quiz="true"
+                data-quiz-question="Which was the most preferred choice?"
+                data-quiz-options='["Lifetime Free", "UPI-Rupay"]' data-quiz-answer="2">
+                <div class="slide-content">
+                    <div class="slide-icon">
+                        <span class="material-symbols-outlined">payment</span>
+                    </div>
+
+                    <div class="payment-hero">
+                        <h1 class="payment-multiplier gradient-text">6X</h1>
+                        <div class="trending-icon">
+                            <span class="material-symbols-outlined">trending_up</span>
+                        </div>
+                    </div>
+
+                    <div class="payment-card">
+                        <div class="card-glow"></div>
+                        <div class="credit-card">
+                            <div class="card-header">
+                                <div class="card-chip"></div>
+                                <span class="card-brand">RuPay</span>
+                            </div>
+                            <div class="card-number">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="digits">8829</span>
+                            </div>
+                            <div class="card-type">Premium Debit</div>
+                        </div>
+                    </div>
+
+                    <div class="payment-text">
+                        <h2 class="payment-title">Rupay took the lead</h2>
+                        <p class="payment-desc">It was your preferred payment method, beating out the competition in
+                            your search history.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Partner Ecosystem -->
+            <div class="slide" data-slide="8" data-has-quiz="false">
+                <div class="slide-content scrollable">
+                    <div class="slide-icon">
+                        <span class="material-symbols-outlined">handshake</span>
+                    </div>
+
+                    <h1 class="ecosystem-title">The Ecosystem</h1>
+                    <p class="ecosystem-subtitle">You connected with <span class="text-primary">42 partners</span> this
+                        year.</p>
+
+                    <div class="partner-highlight glass-panel">
+                        <div class="partner-icon">
+                            <span class="material-symbols-outlined">bolt</span>
+                        </div>
+                        <div class="partner-info">
+                            <div class="partner-badge">
+                                <span>Speed Demon Award</span>
+                                <span class="material-symbols-outlined">emoji_events</span>
+                            </div>
+                            <h3 class="partner-name">BoltShift Inc.</h3>
+                            <p class="partner-desc">Fastest approval</p>
+                        </div>
+                        <div class="partner-time">
+                            <span class="time-big">4m</span>
+                            <span class="time-small">20s</span>
+                        </div>
+                    </div>
+
+                    <h3 class="partners-label">Collaborations</h3>
+                    <div class="partners-grid">
+                        <div class="partner-tile glass-panel">
+                            <div class="partner-logo"
+                                style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">S</div>
+                            <span>Stripe</span>
+                        </div>
+                        <div class="partner-tile glass-panel">
+                            <div class="partner-logo" style="background: #000">V</div>
+                            <span>Vercel</span>
+                        </div>
+                        <div class="partner-tile glass-panel">
+                            <div class="partner-logo" style="background: #0070f3">P</div>
+                            <span>PayPal</span>
+                        </div>
+                        <div class="partner-tile glass-panel">
+                            <div class="partner-logo"
+                                style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"></div>
+                        </div>
+                        <div class="partner-tile glass-panel">
+                            <div class="partner-logo" style="background: #16a34a">S</div>
+                            <span>Shopify</span>
+                        </div>
+                        <div class="partner-tile glass-panel">
+                            <div class="partner-logo" style="background: #ff9900">A</div>
+                            <span>AWS</span>
+                        </div>
+                        <div class="partner-tile glass-panel">
+                            <div class="partner-logo"
+                                style="background: linear-gradient(135deg, #667eea 0%, #f093fb 100%)"></div>
+                        </div>
+                        <div class="partner-tile glass-panel">
+                            <div class="partner-logo" style="background: #ea4c89">D</div>
+                            <span>Dribbble</span>
+                        </div>
+                        <div class="partner-tile glass-panel more">
+                            <span>+33</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Search Insights -->
+            <div class="slide" data-slide="9" data-has-quiz="false">
+                <div class="slide-content">
+                    <div class="slide-icon">
+                        <span class="material-symbols-outlined">search</span>
+                    </div>
+
+                    <h2 class="search-label">Search Solved</h2>
+                    <div class="search-hero">
+                        <div class="search-glow"></div>
+                        <h1 class="search-number text-primary" data-count="843">0</h1>
+                    </div>
+                    <h3 class="search-title">Questions Answered</h3>
+                    <p class="search-desc">You didn't just search—you found answers. That's 843 moments of clarity in
+                        the last 365 days.</p>
+                </div>
+            </div>
+
+            <!-- Slide 10: Feature Requests -->
+            <div class="slide" data-slide="10" data-has-quiz="false">
+                <div class="slide-content">
+                    <div class="slide-icon">
+                        <span class="material-symbols-outlined">dark_mode</span>
+                    </div>
+
+                    <h1 class="feature-title">The one thing you<br>really wanted...</h1>
+
+                    <div class="feature-card glass-panel">
+                        <div class="feature-glow"></div>
+                        <div class="feature-icon-big">
+                            <span class="material-symbols-outlined">dark_mode</span>
+                        </div>
+                        <div class="feature-info">
+                            <h2 class="feature-name">Dark Mode for Desktop</h2>
+                            <p class="feature-label">Top Requested Feature</p>
+                        </div>
+                        <div class="feature-stats">
+                            <div class="feature-stat">
+                                <span class="stat-num">2.4k</span>
+                                <span class="stat-lbl">Upvotes</span>
+                            </div>
+                            <div class="feature-stat">
+                                <div class="stat-growth">
+                                    <span class="material-symbols-outlined">arrow_upward</span>
+                                    <span>15%</span>
+                                </div>
+                                <span class="stat-lbl">Growth</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="feature-desc">Requested by <span class="highlight">42%</span> of the community.<br>You
+                        asked, we listened.</p>
+                </div>
+            </div>
+
+            <!-- Slide 11: Outro -->
+            <div class="slide" data-slide="11" data-has-quiz="false">
+                <div class="slide-content">
+                    <div class="slide-icon">
+                        <span class="material-symbols-outlined">celebration</span>
+                    </div>
+
+                    <div class="outro-visual">
+                        <div class="outro-glow"></div>
+                        <div class="outro-badge">
+                            <span class="outro-year">2023</span>
+                            <div class="outro-line"></div>
+                        </div>
+                    </div>
+
+                    <h1 class="outro-title">That's a wrap!</h1>
+                    <p class="outro-desc">You spent <span class="highlight">12,400 minutes</span> with us this year.
+                        Ready to start your 2024 journey?</p>
+
+                    <div class="outro-actions">
+                        <button class="btn-primary">Open App</button>
+                        <button class="btn-secondary">
+                            <span class="material-symbols-outlined">ios_share</span>
+                            Share this Rewind
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Quiz Overlay -->
+        <div id="quiz-overlay" class="quiz-overlay hidden">
+            <div class="quiz-content">
+                <h2 class="quiz-question"></h2>
+                <div class="quiz-options"></div>
+                <button class="quiz-skip">Skip Question</button>
+            </div>
+        </div>
+
+        <!-- Navigation Tap Areas -->
+        <div class="tap-area tap-left" id="tap-left"></div>
+        <div class="tap-area tap-right" id="tap-right"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/gsap-background.js"></script>
+    <script src="js/sounds.js"></script>
+    <script src="js/haptics.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

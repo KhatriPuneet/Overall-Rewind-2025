@@ -1,0 +1,1832 @@
+<!-- Intro Slide: Your Journey -->
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bankssathi Yearly Rewind</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00D084", // Vibrant Green from image
+                        "primary-dark": "#00a669",
+                        "background-light": "#E8FBF5", // Light minty background
+                        "background-dark": "#064E3B", // Deep emerald for dark mode
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#115E48",
+                    },
+                    fontFamily: {
+                        display: ["'Plus Jakarta Sans'", "sans-serif"],
+                        body: ["'Plus Jakarta Sans'", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'dot-pattern': "radial-gradient(#10B981 0.5px, transparent 0.5px)",
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }.bg-dots {
+            background-image: radial-gradient(#10B981 1px, transparent 1px);
+            background-size: 24px 24px;
+            opacity: 0.1;
+        }
+        .dark .bg-dots {
+            background-image: radial-gradient(#34D399 1px, transparent 1px);
+            opacity: 0.05;
+        }.glow-shadow {
+            box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.3);
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, #00D084, #10B981);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50 dark:bg-gray-900 flex justify-center items-center min-h-screen p-0 sm:p-4">
+<main class="relative w-full max-w-md bg-background-light dark:bg-background-dark overflow-hidden sm:rounded-[32px] shadow-2xl min-h-[812px] flex flex-col">
+<div class="absolute inset-0 bg-dots pointer-events-none z-0"></div>
+<div class="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-emerald-100/50 to-transparent dark:from-emerald-900/30 dark:to-transparent pointer-events-none z-0"></div>
+<div class="relative z-10 flex flex-col h-full p-6">
+<div class="flex gap-2 mb-8 pt-2">
+<div class="h-1.5 flex-1 bg-emerald-200/50 dark:bg-emerald-800/50 rounded-full"></div>
+<div class="h-1.5 flex-1 bg-emerald-200/50 dark:bg-emerald-800/50 rounded-full"></div>
+<div class="h-1.5 flex-1 bg-primary rounded-full"></div>
+<div class="h-1.5 flex-1 bg-emerald-200/50 dark:bg-emerald-800/50 rounded-full"></div>
+<div class="h-1.5 flex-1 bg-emerald-200/50 dark:bg-emerald-800/50 rounded-full"></div>
+</div>
+<div class="flex justify-start mb-8">
+<div class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary-dark dark:text-emerald-300 text-xs font-bold tracking-wider uppercase">
+<span class="material-icons-round text-sm">auto_awesome</span>
+                    Yearly Rewind
+                </div>
+</div>
+<div class="flex justify-center items-center mb-6 relative">
+<div class="w-48 h-48 border-2 border-dashed border-primary/30 rounded-full absolute animate-spin-slow" style="animation-duration: 20s;"></div>
+<div class="w-32 h-32 bg-primary rounded-full flex items-center justify-center glow-shadow transform transition hover:scale-105 duration-300">
+<span class="material-icons-round text-white text-6xl">bolt</span>
+</div>
+</div>
+<div class="text-center space-y-2 mb-6">
+<p class="text-primary-dark dark:text-emerald-400 font-bold tracking-widest text-xs uppercase">Efficiency Record</p>
+<h1 class="text-3xl font-bold text-slate-800 dark:text-white leading-tight">
+                    Fastest time from <br/>
+<span class="text-primary">lead <span class="align-middle text-2xl">➔</span> payout</span>
+</h1>
+</div>
+<div class="text-center mb-8">
+<div class="inline-flex items-baseline justify-center font-display font-extrabold text-slate-900 dark:text-white">
+<span class="text-7xl tracking-tighter">12</span>
+<span class="text-3xl text-slate-500 dark:text-slate-400 mr-2">m</span>
+<span class="text-7xl tracking-tighter">04</span>
+<span class="text-3xl text-slate-500 dark:text-slate-400">s</span>
+</div>
+</div>
+<div class="text-center px-2 mb-auto">
+<p class="text-slate-600 dark:text-slate-300 leading-relaxed text-sm">
+                    You shattered records this year. That's <span class="font-bold text-slate-800 dark:text-white">3x faster</span> than the average advisor in your region.
+                </p>
+</div>
+<div class="mt-8 space-y-4">
+<div class="bg-white dark:bg-card-dark rounded-2xl p-4 flex items-center justify-between shadow-sm border border-emerald-100 dark:border-emerald-800">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-primary">
+<span class="material-icons-round text-xl">emoji_events</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-bold text-slate-900 dark:text-white">TOP 1%</span>
+<span class="text-xs text-slate-500 dark:text-emerald-200/70">Speed Efficiency</span>
+</div>
+</div>
+<span class="material-icons-round text-primary text-xl">verified</span>
+</div>
+<button class="w-full bg-primary hover:bg-emerald-500 text-white font-bold py-4 px-6 rounded-2xl flex items-center justify-center gap-2 transition-colors shadow-lg shadow-emerald-500/20">
+                    Open Banksathi App
+                    <span class="material-icons-round text-sm">north_east</span>
+</button>
+</div>
+</div>
+</main>
+
+</body></html>
+
+<!-- Leads Summary -->
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Banksathi Yearly Rewind - Leads Summary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#10b981", // Emerald 500 equivalent for the vibrant green
+                        "primary-dark": "#059669", // Emerald 600
+                        "primary-light": "#d1fae5", // Emerald 100
+                        "background-light": "#ecfdf5", // Emerald 50
+                        "background-dark": "#064e3b", // Emerald 900
+                        "text-dark": "#111827", // Gray 900
+                        "text-light": "#f9fafb", // Gray 50
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'mesh-light': "radial-gradient(at 0% 0%, hsla(152,100%,96%,1) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(140,100%,88%,1) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(152,100%,96%,1) 0, transparent 50%)",
+                        'mesh-dark': "radial-gradient(at 0% 0%, hsla(160,84%,15%,1) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(160,84%,10%,1) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(160,84%,15%,1) 0, transparent 50%)",
+                    },
+                    boxShadow: {
+                        'soft-glow': '0 0 40px -10px rgba(16, 185, 129, 0.3)',
+                    }
+                },
+            },
+        };
+    </script>
+<style>.bg-dots {
+            background-image: radial-gradient(#10b981 1px, transparent 1px);
+            background-size: 24px 24px;
+            opacity: 0.15;
+        }
+        .dark .bg-dots {
+            background-image: radial-gradient(#34d399 1px, transparent 1px);
+            opacity: 0.1;
+        }@keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }@keyframes pulse-ring {
+            0% { transform: scale(0.8); opacity: 0.5; }
+            100% { transform: scale(1.3); opacity: 0; }
+        }
+        .animate-pulse-ring::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            border-radius: 50%;
+            border: 2px dashed #10b981;
+            animation: pulse-ring 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen font-sans antialiased text-gray-900 dark:text-gray-100 flex justify-center overflow-hidden relative">
+<div class="fixed inset-0 bg-mesh-light dark:bg-mesh-dark pointer-events-none"></div>
+<div class="fixed inset-0 bg-dots pointer-events-none"></div>
+<div class="w-full max-w-md h-full min-h-screen relative flex flex-col px-6 py-8 z-10 mx-auto">
+<div class="flex gap-2 mb-8">
+<div class="h-1.5 flex-1 bg-primary/20 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-full"></div>
+</div>
+<div class="h-1.5 flex-1 bg-primary rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div> 
+<div class="h-1.5 flex-1 bg-primary/20 rounded-full dark:bg-white/20"></div>
+<div class="h-1.5 flex-1 bg-primary/20 rounded-full dark:bg-white/20"></div>
+<div class="h-1.5 flex-1 bg-primary/20 rounded-full dark:bg-white/20"></div>
+</div>
+<div class="flex items-center justify-between mb-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 dark:bg-primary/10 backdrop-blur-sm">
+<span class="material-icons-round text-primary text-sm animate-pulse">auto_awesome</span>
+<span class="text-xs font-bold tracking-wider text-primary uppercase">Yearly Rewind</span>
+</div>
+<div class="flex items-center gap-1 opacity-80">
+<div class="w-6 h-6 bg-primary rounded-md flex items-center justify-center text-white font-bold text-xs">B</div>
+</div>
+</div>
+<div class="flex-1 flex flex-col items-center justify-center text-center mt-4">
+<div class="relative w-40 h-40 mb-10 flex items-center justify-center">
+<div class="absolute inset-0 border-2 border-dashed border-primary/30 rounded-full animate-[spin_10s_linear_infinite]"></div>
+<div class="absolute inset-4 bg-primary/10 rounded-full blur-xl"></div>
+<div class="relative w-24 h-24 bg-gradient-to-br from-primary to-primary-dark rounded-3xl shadow-soft-glow flex items-center justify-center transform rotate-3 animate-float transition-all hover:scale-105 duration-300">
+<span class="material-icons-round text-white text-5xl drop-shadow-md">people_alt</span>
+</div>
+</div>
+<h2 class="text-primary font-bold tracking-wide uppercase text-sm mb-3">Your 2023 Impact</h2>
+<h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight mb-2">
+                You were a
+                <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-600 dark:to-emerald-400">Lead Magnet</span>
+</h1>
+<div class="mt-8 mb-6 relative w-full">
+<div class="flex items-baseline justify-center gap-1">
+<span class="text-7xl font-bold text-gray-900 dark:text-white tracking-tighter">842</span>
+<span class="text-2xl font-semibold text-gray-500 dark:text-gray-400">Total Leads</span>
+</div>
+<div class="w-16 h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-auto my-4 rounded-full"></div>
+<div class="flex flex-col items-center gap-1">
+<span class="text-3xl font-bold text-primary">615</span>
+<span class="text-sm font-medium text-gray-600 dark:text-gray-300 uppercase tracking-wide">Successful Conversions</span>
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-300 text-sm md:text-base leading-relaxed max-w-xs mx-auto">
+                That's an incredible <span class="font-bold text-primary">73% conversion rate</span>! You helped hundreds of customers find the right financial products this year.
+            </p>
+</div>
+<div class="mt-auto pt-8 pb-4 w-full space-y-4">
+<div class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-md rounded-2xl p-4 flex items-center justify-between border border-white/50 dark:border-gray-700 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-icons-round text-xl">emoji_events</span>
+</div>
+<div class="text-left">
+<div class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">Top 5%</div>
+<div class="font-semibold text-gray-900 dark:text-white">Lead Generator</div>
+</div>
+</div>
+<span class="material-icons-round text-primary/60 dark:text-primary">verified</span>
+</div>
+<button class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 px-6 rounded-2xl shadow-lg shadow-primary/25 transition-all transform active:scale-95 flex items-center justify-center gap-2 group">
+<span>View Leaderboard</span>
+<span class="material-icons-round text-sm group-hover:translate-x-1 transition-transform">arrow_outward</span>
+</button>
+</div>
+</div>
+
+</body></html>
+
+<!-- Unique Customers -->
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yearly Rewind - Unique Customers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#10b981", // Emerald 500 equivalent, vibrant green from the button
+                        "primary-dark": "#059669",
+                        "accent-green": "#34d399", // Lighter green for highlights
+                        "bg-light": "#ecfdf5", // Very light mint
+                        "bg-dark": "#064e3b", // Deep emerald for dark mode
+                        "text-dark": "#064e3b", // Dark green text for light mode
+                        "text-light": "#d1fae5", // Light mint text for dark mode
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Inter', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    },
+                    boxShadow: {
+                        'glow': '0 0 20px rgba(52, 211, 153, 0.5)',
+                    }
+                },
+            },
+        };
+    </script>
+<style>.dot-pattern {
+            background-image: radial-gradient(#10b981 1px, transparent 1px);
+            background-size: 24px 24px;
+            opacity: 0.1;
+        }
+        .dark .dot-pattern {
+            background-image: radial-gradient(#34d399 1px, transparent 1px);
+            opacity: 0.05;
+        }@keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .dashed-circle {
+            animation: spin-slow 20s linear infinite;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-bg-light dark:bg-bg-dark text-gray-800 dark:text-gray-100 font-sans antialiased min-h-screen flex items-center justify-center p-4">
+<div class="w-full max-w-md bg-gradient-to-b from-[#f0fdf4] to-[#dcfce7] dark:from-[#064e3b] dark:to-[#022c22] rounded-[2.5rem] shadow-2xl overflow-hidden relative min-h-[800px] flex flex-col justify-between">
+<div class="absolute inset-0 dot-pattern pointer-events-none z-0"></div>
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/20 dark:bg-primary/10 blur-[80px] rounded-full pointer-events-none z-0"></div>
+<div class="relative z-10 flex flex-col h-full p-6 pb-8">
+<div class="flex space-x-2 mb-8 pt-4">
+<div class="h-1.5 flex-1 bg-primary/30 rounded-full"></div>
+<div class="h-1.5 flex-1 bg-primary/30 rounded-full"></div>
+<div class="h-1.5 flex-1 bg-primary rounded-full shadow-[0_0_8px_rgba(16,185,129,0.6)]"></div>
+<div class="h-1.5 flex-1 bg-primary/30 rounded-full"></div>
+<div class="h-1.5 flex-1 bg-primary/30 rounded-full"></div>
+</div>
+<div class="flex justify-start mb-12">
+<div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 dark:bg-primary/20 backdrop-blur-sm">
+<span class="material-icons-round text-primary text-sm">auto_awesome</span>
+<span class="text-xs font-bold text-primary tracking-wide uppercase">Yearly Rewind</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col items-center justify-center -mt-10">
+<div class="relative mb-10">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border-2 border-dashed border-primary/20 rounded-full dashed-circle"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 border border-dashed border-primary/30 rounded-full dashed-circle" style="animation-direction: reverse; animation-duration: 25s;"></div>
+<div class="relative w-28 h-28 bg-gradient-to-br from-[#34d399] to-[#059669] rounded-full flex items-center justify-center shadow-lg shadow-emerald-500/30 transform transition hover:scale-105 duration-300">
+<div class="absolute inset-0 bg-white/20 rounded-full blur-md"></div>
+<span class="material-icons-round text-white text-5xl relative drop-shadow-md">groups</span>
+</div>
+</div>
+<div class="text-center space-y-2 mb-8">
+<h2 class="text-primary font-bold tracking-wider text-sm uppercase">Community Impact</h2>
+<h1 class="text-3xl font-extrabold text-gray-900 dark:text-white leading-tight">
+                        Customers served<br/>with trust
+                    </h1>
+</div>
+<div class="relative mb-8 text-center">
+<div class="text-[5rem] font-black text-gray-900 dark:text-white leading-none tracking-tighter flex items-center justify-center">
+<span class="bg-clip-text text-transparent bg-gradient-to-b from-gray-800 to-gray-600 dark:from-white dark:to-gray-400">1,248</span>
+</div>
+<div class="h-1 w-32 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent mt-2 opacity-50 blur-sm"></div>
+</div>
+<div class="text-center max-w-[280px]">
+<p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                        You've expanded your reach significantly! That's <span class="font-bold text-primary dark:text-accent-green">15% more</span> unique families protected than last year.
+                    </p>
+</div>
+</div>
+<div class="space-y-4 mt-auto">
+<div class="bg-white/60 dark:bg-black/20 backdrop-blur-md rounded-2xl p-4 flex items-center justify-between border border-white/50 dark:border-white/10 shadow-sm">
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-primary">
+<span class="material-icons-round text-xl">emoji_events</span>
+</div>
+<div>
+<p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Top Performer</p>
+<p class="text-sm font-semibold text-gray-900 dark:text-white">Top 5% in Customer Retention</p>
+</div>
+</div>
+<span class="material-icons-round text-primary/70">verified</span>
+</div>
+<button class="w-full bg-primary hover:bg-primary-dark active:scale-[0.98] text-white font-bold py-4 px-6 rounded-2xl shadow-lg shadow-emerald-500/20 transition-all duration-200 flex items-center justify-center group">
+<span>Open Banksathi App</span>
+<span class="material-icons-round ml-2 text-sm group-hover:translate-x-1 transition-transform">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+
+</body></html>
+
+<!-- Total Earnings -->
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yearly Rewind - Total Earnings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#10B981", // Emerald 500 equivalent from screenshot
+              secondary: "#047857", // Darker emerald for depth
+              "background-light": "#ECFDF5", // Very light emerald background
+              "background-dark": "#064E3B", // Deep emerald/green for dark mode
+              "card-light": "#FFFFFF",
+              "card-dark": "#065F46",
+            },
+            fontFamily: {
+              display: ['"Plus Jakarta Sans"', 'sans-serif'],
+              body: ['"Plus Jakarta Sans"', 'sans-serif'],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              'xl': "1.5rem",
+              '2xl': "2rem",
+            },
+            boxShadow: {
+              'glow': '0 0 20px rgba(16, 185, 129, 0.3)',
+              'glow-dark': '0 0 30px rgba(16, 185, 129, 0.15)',
+            }
+          },
+        },
+      };
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .bg-pattern {
+            background-image: radial-gradient(rgba(16, 185, 129, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center p-4 antialiased transition-colors duration-300">
+<div class="w-full max-w-md h-full min-h-[800px] relative flex flex-col justify-between overflow-hidden bg-background-light dark:bg-background-dark bg-pattern rounded-[40px] shadow-2xl ring-8 ring-black/5 dark:ring-white/5">
+<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-white/40 dark:to-black/20 pointer-events-none"></div>
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/20 blur-[80px] rounded-full pointer-events-none"></div>
+<div class="relative z-10 flex flex-col h-full px-6 pt-8 pb-8">
+<div class="flex gap-2 mb-8">
+<div class="h-1.5 flex-1 bg-primary/30 rounded-full"></div>
+<div class="h-1.5 flex-1 bg-primary/30 rounded-full"></div>
+<div class="h-1.5 flex-1 bg-primary/30 rounded-full"></div>
+<div class="h-1.5 flex-1 bg-primary rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+<div class="h-1.5 flex-1 bg-primary/30 rounded-full"></div>
+</div>
+<div class="mb-12">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/40 bg-white/30 dark:bg-black/10 backdrop-blur-sm">
+<span class="material-icons-round text-primary text-sm">auto_awesome</span>
+<span class="text-xs font-bold tracking-wider text-primary">YEARLY REWIND</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col items-center justify-center text-center -mt-10">
+<div class="relative mb-10 group">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border-2 border-dashed border-primary/30 rounded-full animate-[spin_10s_linear_infinite]"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-36 bg-primary/10 rounded-full"></div>
+<div class="relative w-24 h-24 bg-gradient-to-tr from-primary to-[#34D399] rounded-3xl flex items-center justify-center shadow-glow transform transition-transform duration-500 hover:scale-105 rotate-3 hover:rotate-0">
+<span class="material-icons-round text-white text-5xl">currency_rupee</span>
+</div>
+</div>
+<h2 class="text-primary font-bold tracking-widest text-sm uppercase mb-3">Financial Milestone</h2>
+<h1 class="text-4xl dark:text-white text-gray-900 font-extrabold leading-tight mb-2">
+                    Total Earnings<br/>
+<span class="text-primary">Unlocked</span>
+</h1>
+<div class="my-6 relative">
+<div class="text-[4rem] leading-none font-black text-gray-900 dark:text-white tracking-tight flex items-baseline justify-center gap-1">
+<span class="text-4xl text-gray-500 dark:text-gray-400 font-bold self-start mt-2">₹</span>
+<span>4,85,250</span>
+</div>
+<div class="h-4 w-48 mx-auto bg-primary/20 blur-xl rounded-full -mt-2"></div>
+</div>
+<p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed max-w-[280px] mx-auto">
+                    You've turned your hard work into serious gains this year. That's a <span class="font-bold text-gray-900 dark:text-white">15% increase</span> from last year!
+                </p>
+</div>
+<div class="bg-white dark:bg-card-dark rounded-2xl p-4 flex items-center justify-between shadow-lg shadow-primary/5 border border-primary/10 mb-6 backdrop-blur-md bg-opacity-80 dark:bg-opacity-80">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center text-primary">
+<span class="material-icons-round text-xl">trending_up</span>
+</div>
+<div class="text-left">
+<p class="text-xs font-bold text-gray-500 dark:text-green-200/70 uppercase">Top Performer</p>
+<p class="text-sm font-semibold text-gray-900 dark:text-white">Top 5% of advisors</p>
+</div>
+</div>
+<div class="text-primary">
+<span class="material-icons-round">verified</span>
+</div>
+</div>
+<button class="w-full py-4 bg-primary hover:bg-secondary text-white rounded-2xl font-bold text-lg shadow-lg shadow-primary/30 transition-all active:scale-[0.98] flex items-center justify-center gap-2 group">
+<span>View Full Breakdown</span>
+<span class="material-icons-round text-sm transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">north_east</span>
+</button>
+</div>
+</div>
+
+</body></html>
+
+<!-- Top Product -->
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yearly Rewind - Efficiency Record</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#10B981", // Emerald 500 equivalent for the vibrant green
+                        secondary: "#34D399", // Lighter green for accents
+                        "background-light": "#ECFDF5", // Very light mint green
+                        "background-dark": "#064E3B", // Deep forest green for dark mode
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#065F46", // Darker green card background
+                        "text-dark": "#D1FAE5", // Light text for dark mode
+                        "text-light": "#1F2937", // Dark text for light mode
+                    },
+                    fontFamily: {
+                        display: ['Inter', 'sans-serif'],
+                        mono: ['Space Mono', 'monospace'], // For the big numbers
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        'xl': "1rem",
+                        '2xl': "1.5rem",
+                        '3xl': "2rem",
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'subtle-pattern': "url('data:image/svg+xml,%3Csvg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"%2310B981\" fill-opacity=\"0.05\" fill-rule=\"evenodd\"%3E%3Ccircle cx=\"3\" cy=\"3\" r=\"1\"/%3E%3C/g%3E%3C/svg%3E')",
+                    }
+                },
+            },
+        };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Mono:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<style>body {
+    font-family: "Inter", sans-serif
+    }.dashed-circle {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBCAc8172ytjlP1ixBtQgN2FzYG-0kizu5nURaSF8LQJ3UO_BC-5WnYngNXcLVezuJhUZl_9of8dPW2ZHfiKkAeAGageeWvuaBwE_InPf-PdwqMLIH8Ers3i4hjfkEanp_RsxZJdKB5Ux3ZsArAEqC_ee84kU-5t7CLa0NxKKp503baO5Tdk4bZzSVS6QZ9QHAQE_nlGTMQb842YpPVhuWq-sT0O3Bs173DW35hycBT-y3E2RQqPO3RSpQ3Tvs1xvWABVN1BjpM45Q);
+    border-radius: 9999px
+    }
+.dark .dashed-circle {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCA9HVbDXvZ6l-CiFRMRIJ0rXqSiIlVK5Yo_xZph8WmKOSIBgnG4pRwK0rQK6D-mzEqrZOrfzemiF5Se-xBtFIXbY3BHCbeloMG311AagkrkwDtFnGWbl3yR9TqclsMmpLHwQDW8Xm4Cn21vCsBozoJdSGFwPrS4LqJk2OQ0lo44RdPLNW1IxsfwK_6v037Z-UeO-U4LWz8LY5At2hflVKAOfdtbK6vNHq1n8qghTaX6XPmzBz5JtXrz7dEnrpySulrrQteBat-fZI)
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center p-4 relative overflow-hidden transition-colors duration-300">
+<div class="absolute inset-0 bg-subtle-pattern pointer-events-none opacity-50 dark:opacity-20"></div>
+<main class="w-full max-w-md h-full min-h-[800px] flex flex-col relative z-10 mx-auto rounded-3xl overflow-hidden">
+<div class="flex gap-2 mb-8 pt-4 px-2">
+<div class="h-1.5 flex-1 bg-emerald-200/50 dark:bg-emerald-900/50 rounded-full"></div>
+<div class="h-1.5 flex-1 bg-emerald-200/50 dark:bg-emerald-900/50 rounded-full"></div>
+<div class="h-1.5 flex-1 bg-primary rounded-full shadow-[0_0_8px_rgba(16,185,129,0.6)]"></div>
+<div class="h-1.5 flex-1 bg-emerald-200/50 dark:bg-emerald-900/50 rounded-full"></div>
+<div class="h-1.5 flex-1 bg-emerald-200/50 dark:bg-emerald-900/50 rounded-full"></div>
+</div>
+<div class="flex justify-start px-2 mb-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-300 dark:border-emerald-700 bg-white/20 dark:bg-black/20 backdrop-blur-sm">
+<span class="material-icons-round text-primary text-sm">auto_awesome</span>
+<span class="text-xs font-bold tracking-wider text-primary uppercase">Yearly Rewind</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col items-center justify-center text-center px-4 relative">
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-emerald-300/20 dark:bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative mb-10 w-48 h-48 flex items-center justify-center">
+<div class="absolute inset-0 dashed-circle animate-[spin_10s_linear_infinite]"></div>
+<div class="relative w-24 h-24 bg-primary rounded-full flex items-center justify-center shadow-[0_20px_40px_-10px_rgba(16,185,129,0.5)] z-10 transform transition-transform hover:scale-105 duration-300">
+<div class="absolute inset-0 bg-gradient-to-tr from-emerald-600 to-emerald-400 rounded-full opacity-100"></div>
+<span class="material-icons-round text-white text-5xl relative z-10">bolt</span>
+</div>
+</div>
+<div class="space-y-2 mb-8 animate-fade-in-up">
+<h3 class="text-primary font-semibold tracking-wide uppercase text-sm">Efficiency Record</h3>
+<h1 class="text-4xl font-extrabold text-text-light dark:text-white leading-tight">
+                    Fastest time from <br/>
+<span class="text-primary inline-flex items-center gap-1">
+                        lead 
+                        <span class="material-icons-round text-3xl">arrow_right_alt</span> 
+                        payout
+                    </span>
+</h1>
+</div>
+<div class="mb-8 relative">
+<div class="text-7xl font-bold font-mono text-text-light dark:text-white flex items-baseline justify-center tracking-tighter">
+                    12<span class="text-4xl text-gray-400 dark:text-gray-500 ml-1 mr-3">m</span>
+                    04<span class="text-4xl text-gray-400 dark:text-gray-500 ml-1">s</span>
+</div>
+<div class="h-1.5 w-32 bg-gradient-to-r from-transparent via-emerald-200 dark:via-emerald-800 to-transparent mx-auto mt-2 rounded-full"></div>
+</div>
+<p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed max-w-xs mx-auto mb-10">
+                You shattered records this year. That's <span class="font-bold text-gray-800 dark:text-white">3x faster</span> than the average advisor in your region.
+            </p>
+</div>
+<div class="px-4 pb-8 space-y-4">
+<div class="bg-white dark:bg-white/5 border border-emerald-100 dark:border-emerald-800/50 rounded-2xl p-4 flex items-center justify-between shadow-sm backdrop-blur-sm">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-primary">
+<span class="material-icons-round text-2xl">emoji_events</span>
+</div>
+<div class="text-left">
+<p class="text-xs font-bold text-text-light dark:text-white uppercase tracking-wider">Top 1%</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Speed Efficiency</p>
+</div>
+</div>
+<div class="text-emerald-400">
+<span class="material-icons-round">verified</span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-emerald-600 text-white font-bold py-4 px-6 rounded-2xl shadow-lg shadow-emerald-500/30 transition-all transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 group">
+<span>Open Banksathi App</span>
+<span class="material-icons-round text-lg group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">north_east</span>
+</button>
+</div>
+</main>
+<style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+    </style>
+
+</body></html>
+
+<!-- Fastest Payout Time -->
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yearly Rewind - Fastest Payout</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#10b981", // Emerald 500 equivalent
+                        "primary-dark": "#059669",
+                        "background-light": "#ecfdf5", // Emerald 50
+                        "background-dark": "#064e3b", // Emerald 900
+                        "card-light": "#ffffff",
+                        "card-dark": "#065f46", // Emerald 800
+                        "text-main-light": "#064e3b",
+                        "text-main-dark": "#ecfdf5",
+                        "text-sub-light": "#374151",
+                        "text-sub-dark": "#d1fae5",
+                        "accent-green": "#34d399",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        'xl': "1.5rem",
+                        '2xl': "2rem",
+                        '3xl': "3rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>.bg-pattern {
+    background-image: radial-gradient(#10b981 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.15
+    }
+.dark .bg-pattern {
+    opacity: 0.1;
+    background-image: radial-gradient(#34d399 1px, transparent 1px)
+    }.dashed-circle {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBjToYk7iYZlI7R-IModIPPA6wP_59mOeJfv4jbEEb5E2M4kgIDf2Kbl0QjhMd5jXZ_Ape3JHX_3qhyH2uX9RvMIxbc-8pVgH1f3tSke3N0G0z6msJGlwXMWh9GGB--8agqJ6S3JqHA1aHDQoDQPvZnS1cjBWfzt0TtpzK94-AqNpB360yaLHtNWi22YdYpOMN-C03LM0bLdwAnx7wSSVBrtQV8shS2wLpf32ZfsS4GuHcBPkSVkEH5mNvy_rtBztsPYrDPrJ36hnU)
+    }
+.dark .dashed-circle {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDbnJxWldbc6FYPY_vqTqenJT9LYU9PSHIWGIiJ72fYQXxXjlwXTBlMLPbB3vmGrfkpGwj2jPVmCYFTo94P6rUQncSM1BQGma178_tpmRPm5MrNkQxvA0keEujyzft38T3qjB8Tez9UGVVX3mzt7roYQJELd8VsNrThl_PXvjQNBGO_g_eGiw-Hq9u8RyJqB8-93reM3bJv-b3nn5yIAMGrYR2iZhR-Rdc4NLgqPhGwzjt7vjSewNmt5EuEd5KmekoB6CColnLXU9E)
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col relative overflow-hidden transition-colors duration-300">
+<div class="absolute inset-0 bg-pattern pointer-events-none"></div>
+<main class="flex-grow flex flex-col px-6 py-8 relative z-10 max-w-md mx-auto w-full justify-between h-screen">
+<div class="space-y-8">
+<div class="flex gap-2 mb-6">
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-white/20"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-white/20"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary shadow-lg shadow-primary/40"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-white/20"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-white/20"></div>
+</div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-white/40 dark:bg-black/20 backdrop-blur-sm">
+<span class="material-icons-round text-primary text-sm">auto_awesome</span>
+<span class="text-xs font-bold tracking-wide text-primary uppercase">Yearly Rewind</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center space-y-6 flex-grow justify-center -mt-10">
+<div class="relative w-40 h-40 flex items-center justify-center mb-4">
+<div class="absolute inset-0 rounded-full border border-primary/10 dark:border-white/5 scale-125"></div>
+<div class="absolute inset-0 rounded-full dashed-circle opacity-50 animate-spin-slow" style="animation-duration: 20s;"></div>
+<div class="w-24 h-24 bg-primary rounded-full shadow-xl shadow-primary/30 flex items-center justify-center relative overflow-hidden transform transition-transform hover:scale-105 duration-300">
+<div class="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent"></div>
+<span class="material-icons-round text-white text-5xl relative z-10">bolt</span>
+</div>
+</div>
+<div class="space-y-2">
+<h2 class="text-primary font-semibold tracking-wider text-sm uppercase">Efficiency Record</h2>
+<h1 class="text-3xl font-bold text-text-main-light dark:text-text-main-dark leading-tight">
+                    Fastest time from<br/>
+<span class="text-primary">lead <span class="align-middle material-icons-round text-2xl">arrow_right_alt</span> payout</span>
+</h1>
+</div>
+<div class="relative py-4">
+<div class="text-7xl font-bold text-text-main-light dark:text-white tracking-tighter flex items-baseline justify-center">
+                    12<span class="text-4xl text-gray-500 dark:text-gray-400 font-medium ml-1 mr-2">m</span>
+                    04<span class="text-4xl text-gray-500 dark:text-gray-400 font-medium ml-1">s</span>
+</div>
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 w-32 h-1 bg-primary/20 rounded-full blur-sm"></div>
+</div>
+<p class="text-text-sub-light dark:text-text-sub-dark/80 text-sm leading-relaxed max-w-xs mx-auto">
+                You shattered records this year. That's <span class="font-bold text-primary dark:text-accent-green">3x faster</span> than the average advisor in your region.
+            </p>
+</div>
+<div class="space-y-4 pb-4">
+<div class="bg-card-light/80 dark:bg-black/20 backdrop-blur-md rounded-2xl p-4 flex items-center justify-between border border-primary/10 dark:border-white/10 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center text-primary dark:text-accent-green">
+<span class="material-icons-round text-xl">emoji_events</span>
+</div>
+<div class="text-left">
+<p class="text-xs font-bold text-text-main-light dark:text-white uppercase">Top 1%</p>
+<p class="text-sm text-text-sub-light dark:text-gray-300">Speed Efficiency</p>
+</div>
+</div>
+<span class="material-icons-round text-primary dark:text-accent-green">verified</span>
+</div>
+<button class="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-6 rounded-2xl shadow-lg shadow-primary/30 transition-all active:scale-[0.98] flex items-center justify-center gap-2 group">
+<span>Open Banksathi App</span>
+<span class="material-icons-round text-sm transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">north_east</span>
+</button>
+</div>
+</main>
+<script>
+      // Simple dark mode toggle for testing purposes if user system pref changes
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (event.matches) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      });
+    </script>
+
+</body></html>
+
+<!-- Best Month -->
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Banksathi Yearly Rewind - Best Month</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#00C885", // The vibrant mint green from the screenshot
+                        "primary-dark": "#059669",
+                        "background-light": "#E8FBF5", // Very light mint background
+                        "background-dark": "#022c22", // Deep forest green for dark mode
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#134e4a",
+                    },
+                    fontFamily: {
+                        display: ["Outfit", "sans-serif"],
+                        body: ["Outfit", "sans-serif"],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(0, 200, 133, 0.2)',
+                        'glow': '0 0 60px -15px rgba(0, 200, 133, 0.5)',
+                        'card': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                    }
+                },
+            },
+        };
+    </script>
+<style>.bg-pattern {
+    background-image: radial-gradient(#00C885 0.5px, transparent 0.5px);
+    background-size: 24px 24px
+    }
+.dashed-circle {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuArDLnZDbOrbqFoJarum5R3SEpMku_BGPaV0wF4_iSw1UijJrA6WIR-_K485U6UsSyqyZls13Rrlt-9oFZaBmOMRsYHXDnuO_zBkxT-jlEEkd01mPTo70N3RJzNjAaD0EJdJki1xvzumgsQluJVNdxy5fRzZAAQeS4zV7BM23NJwlUB6GvOCtrBpQEI8lC7UeFLHrSTmtVJh35A7lHkOZmFtW1y-A0k2yuBcU7anLL6cCTqKRB1RrLzd9LbZhxXeA6so_aslkT2L8U)
+    }body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-100 dark:bg-gray-900 flex justify-center items-center min-h-screen font-body p-0 sm:p-4">
+<div class="w-full max-w-md bg-background-light dark:bg-background-dark h-[100dvh] sm:h-[850px] sm:rounded-[3rem] shadow-2xl overflow-hidden relative flex flex-col transition-colors duration-300">
+<div class="absolute inset-0 bg-pattern opacity-[0.15] dark:opacity-[0.05] pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/60 dark:to-black/40 pointer-events-none"></div>
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-80 h-80 bg-primary/20 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col h-full px-6 pt-6 pb-8">
+<div class="flex gap-2 mb-6">
+<div class="h-1 flex-1 rounded-full bg-primary/30 dark:bg-white/20"></div>
+<div class="h-1 flex-1 rounded-full bg-primary/30 dark:bg-white/20"></div>
+<div class="h-1 flex-1 rounded-full bg-primary shadow-[0_0_10px_rgba(0,200,133,0.5)]"></div>
+<div class="h-1 flex-1 rounded-full bg-primary/30 dark:bg-white/20"></div>
+<div class="h-1 flex-1 rounded-full bg-primary/30 dark:bg-white/20"></div>
+</div>
+<div class="flex justify-between items-center mb-8">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center font-bold text-xl">B</div>
+<span class="font-bold text-lg text-slate-800 dark:text-white tracking-tight">Banksathi</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 dark:bg-primary/20 border border-primary/20 rounded-full">
+<span class="material-icons-round text-primary text-sm">auto_awesome</span>
+<span class="text-xs font-bold text-primary tracking-wide uppercase">Yearly Rewind</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col items-center justify-center text-center -mt-8">
+<div class="relative mb-10">
+<div class="w-48 h-48 rounded-full dashed-circle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[spin_10s_linear_infinite]"></div>
+<div class="w-32 h-32 rounded-full bg-primary/20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-xl"></div>
+<div class="w-24 h-24 bg-primary rounded-[2rem] shadow-glow flex items-center justify-center relative transform transition-transform hover:scale-105 duration-300">
+<span class="material-icons-round text-white text-5xl">calendar_month</span>
+</div>
+</div>
+<h3 class="text-primary font-bold tracking-wider text-sm uppercase mb-3">Performance Peak</h3>
+<h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-2 leading-tight">
+                    Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-600">Best Month</span>
+<br/>was legendary
+                </h1>
+<div class="my-6 relative">
+<span class="text-7xl font-black text-slate-800 dark:text-white tracking-tighter drop-shadow-sm">August</span>
+<span class="material-icons-round text-yellow-400 absolute -top-2 -right-6 text-3xl animate-bounce">star</span>
+</div>
+<div class="inline-flex items-center gap-2 bg-emerald-100 dark:bg-emerald-900/50 px-4 py-2 rounded-xl mb-6">
+<span class="material-icons-round text-emerald-600 dark:text-emerald-400 text-xl">payments</span>
+<span class="font-bold text-emerald-800 dark:text-emerald-300 text-lg">₹ 85,400 Payout</span>
+</div>
+<p class="text-slate-500 dark:text-slate-300 text-base px-6 leading-relaxed">
+                    You closed <strong class="text-slate-800 dark:text-white">24 leads</strong> in August alone. That's more than double your monthly average!
+                </p>
+</div>
+<div class="mt-auto space-y-4 w-full">
+<div class="bg-white dark:bg-surface-dark rounded-2xl p-4 shadow-card border border-slate-100 dark:border-slate-700/50 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+<span class="material-icons-round text-primary text-2xl">emoji_events</span>
+</div>
+<div class="text-left">
+<p class="text-xs font-bold text-slate-400 dark:text-slate-400 uppercase tracking-wide">Achievement</p>
+<p class="text-slate-800 dark:text-white font-semibold">Top 5% Monthly Earner</p>
+</div>
+</div>
+<span class="material-icons-round text-primary/60 dark:text-primary">verified</span>
+</div>
+<button class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-2xl shadow-lg shadow-primary/30 flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
+<span>Open Banksathi App</span>
+<span class="material-icons-round text-sm font-bold">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+
+</body></html>
+
+<!-- Most Active Day -->
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yearly Rewind - Most Active Day</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#10B981", // Emerald 500 equivalent from the image
+                        "primary-dark": "#059669",
+                        "background-light": "#F0FDF4", // Very light green/mint
+                        "background-dark": "#064E3B", // Deep forest green for dark mode
+                        "accent-light": "#D1FAE5", // Light mint for pills/bgs
+                        "accent-dark": "#065F46", // Darker teal for dark mode
+                        "text-main": "#064E3B",
+                        "text-light": "#ECFDF5",
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        'xl': "1.5rem",
+                        '2xl': "2rem",
+                    },
+                    boxShadow: {
+                        'glow': '0 0 40px -10px rgba(16, 185, 129, 0.5)',
+                        'card': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                    }
+                },
+            },
+        };
+    </script>
+<style>.bg-pattern {
+            background-image: radial-gradient(#10B981 1px, transparent 1px);
+            background-size: 24px 24px;
+            opacity: 0.15;
+        }
+        .dark .bg-pattern {
+            opacity: 0.05;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 font-sans min-h-screen relative overflow-hidden flex flex-col items-center">
+<div class="absolute inset-0 bg-pattern pointer-events-none z-0"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/60 dark:to-black/60 pointer-events-none z-0"></div>
+<main class="relative z-10 w-full max-w-md px-6 py-8 flex flex-col h-screen max-h-[900px] justify-between">
+<div class="space-y-6">
+<div class="flex space-x-2">
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-primary/20"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-primary/20"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-primary/20"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-primary/20"></div>
+</div>
+<div class="inline-flex items-center px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 dark:bg-primary/20 backdrop-blur-sm">
+<span class="material-icons-round text-primary text-sm mr-2">auto_awesome</span>
+<span class="text-xs font-bold text-primary tracking-wide uppercase">Yearly Rewind</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center space-y-8 mt-4">
+<div class="relative">
+<div class="absolute inset-0 -m-4 border-2 border-dashed border-primary/30 rounded-full animate-spin-slow" style="animation-duration: 20s;"></div>
+<div class="absolute inset-0 bg-primary/20 rounded-full blur-xl"></div>
+<div class="relative w-24 h-24 bg-primary rounded-full flex items-center justify-center shadow-glow shadow-primary/50 transform transition hover:scale-105 duration-300">
+<span class="material-icons-round text-white text-5xl">calendar_month</span>
+</div>
+</div>
+<div class="space-y-4">
+<h2 class="text-primary font-bold tracking-wide uppercase text-sm">Peak Performance</h2>
+<div class="space-y-1">
+<h1 class="text-3xl font-bold text-gray-900 dark:text-white leading-tight">
+                        Your most <br/>active day was
+                    </h1>
+</div>
+<div class="pt-2 pb-4">
+<span class="text-6xl font-black text-gray-900 dark:text-white tracking-tight drop-shadow-sm">Wednesday</span>
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed max-w-xs mx-auto">
+                Mid-week magic! You consistently closed more deals and responded faster on Wednesdays than any other day.
+            </p>
+</div>
+<div class="space-y-6 w-full pb-6">
+<div class="bg-white dark:bg-gray-800/80 backdrop-blur-md rounded-2xl p-4 flex items-center justify-between border border-gray-100 dark:border-gray-700 shadow-card">
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-primary">
+<span class="material-icons-round">trending_up</span>
+</div>
+<div class="text-left">
+<p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">Weekly Streak</p>
+<p class="text-gray-900 dark:text-white font-semibold">14 Wednesdays in a row</p>
+</div>
+</div>
+<div class="text-primary">
+<span class="material-icons-round">verified</span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 px-6 rounded-2xl shadow-lg shadow-primary/30 flex items-center justify-center group transition-all duration-200 transform active:scale-95">
+<span>Open Banksathi App</span>
+<span class="material-icons-round ml-2 group-hover:translate-x-1 transition-transform text-sm">north_east</span>
+</button>
+</div>
+</main>
+
+</body></html>
+
+<!-- Longest Streak -->
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yearly Rewind - Longest Streak</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#10b981", // Emerald 500 equivalent, matching the green buttons/icons
+                        "primary-dark": "#059669",
+                        "accent-green": "#d1fae5", // Light green background tint
+                        "text-main": "#0f172a", // Slate 900
+                        "text-secondary": "#475569", // Slate 600
+                        "background-light": "#ecfdf5", // Very light emerald tint
+                        "background-dark": "#064e3b", // Deep emerald for dark mode
+                        "card-light": "#ffffff",
+                        "card-dark": "#065f46",
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        'xl': '1.5rem',
+                        '2xl': '2rem',
+                    },
+                    backgroundImage: {
+                        'pattern-light': "radial-gradient(#10b981 0.5px, transparent 0.5px)",
+                        'pattern-dark': "radial-gradient(#34d399 0.5px, transparent 0.5px)",
+                        'glow-radial': "radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, rgba(255, 255, 255, 0) 70%)",
+                    }
+                },
+            },
+        };
+    </script>
+<style>.bg-dots {
+            background-size: 20px 20px;
+        }@keyframes pulse-slow {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.9; }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 3s infinite ease-in-out;
+        }@keyframes progress {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+        .animate-progress {
+            animation: progress 4s linear forwards;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-sans antialiased bg-background-light dark:bg-background-dark text-text-main dark:text-white min-h-screen flex flex-col relative overflow-hidden transition-colors duration-300">
+<div class="absolute inset-0 bg-dots bg-pattern-light dark:bg-pattern-dark opacity-10 dark:opacity-20 pointer-events-none z-0"></div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+<div class="w-[500px] h-[500px] bg-emerald-300/30 dark:bg-emerald-500/20 rounded-full blur-3xl"></div>
+</div>
+<div class="relative z-10 flex flex-col h-full min-h-screen p-6 max-w-md mx-auto w-full justify-between">
+<div class="space-y-6">
+<div class="flex gap-2 pt-2">
+<div class="h-1 bg-emerald-200 dark:bg-emerald-800 rounded-full flex-1 overflow-hidden">
+<div class="h-full bg-primary w-full"></div>
+</div>
+<div class="h-1 bg-emerald-200 dark:bg-emerald-800 rounded-full flex-1 overflow-hidden">
+<div class="h-full bg-primary w-full"></div>
+</div>
+<div class="h-1 bg-emerald-200 dark:bg-emerald-800 rounded-full flex-1 overflow-hidden">
+<div class="h-full bg-primary animate-progress"></div>
+</div>
+<div class="h-1 bg-emerald-200 dark:bg-emerald-800 rounded-full flex-1"></div>
+<div class="h-1 bg-emerald-200 dark:bg-emerald-800 rounded-full flex-1"></div>
+</div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 dark:bg-primary/20 backdrop-blur-sm">
+<span class="material-icons-round text-primary text-sm">auto_awesome</span>
+<span class="text-xs font-bold tracking-wider text-primary uppercase">Yearly Rewind</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center space-y-8 mt-4">
+<div class="relative group">
+<div class="absolute -inset-8 border-2 border-dashed border-emerald-300 dark:border-emerald-600 rounded-full opacity-50 animate-spin-slow" style="animation-duration: 20s;"></div>
+<div class="relative w-32 h-32 rounded-full bg-gradient-to-br from-emerald-400 to-primary flex items-center justify-center shadow-lg shadow-emerald-200 dark:shadow-none animate-pulse-slow">
+<div class="absolute inset-0 rounded-full border border-white/20"></div>
+<span class="material-icons-round text-white text-6xl drop-shadow-md transform -rotate-12">local_fire_department</span>
+</div>
+</div>
+<div class="space-y-2">
+<h2 class="text-emerald-600 dark:text-emerald-300 font-bold tracking-wide uppercase text-sm">Consistency Champion</h2>
+<h1 class="text-3xl font-bold text-slate-900 dark:text-white leading-tight">
+                    Your longest daily<br/>
+<span class="text-primary">streak</span> was
+                </h1>
+</div>
+<div class="relative">
+<div class="flex items-baseline justify-center font-display tracking-tighter">
+<span class="text-[6rem] font-bold text-slate-900 dark:text-white leading-none">42</span>
+<span class="text-4xl font-medium text-slate-500 dark:text-slate-400 ml-1">days</span>
+</div>
+<div class="h-1.5 w-32 bg-gradient-to-r from-transparent via-emerald-400 to-transparent mx-auto mt-2 rounded-full opacity-60"></div>
+</div>
+<p class="text-slate-600 dark:text-slate-300 font-medium max-w-xs leading-relaxed">
+                You were unstoppable! That's <span class="font-bold text-slate-800 dark:text-white">2 weeks longer</span> than your personal best from last year. Keep that fire burning!
+            </p>
+</div>
+<div class="space-y-4 pb-4">
+<div class="bg-white dark:bg-card-dark rounded-2xl p-4 flex items-center justify-between shadow-sm border border-emerald-100 dark:border-emerald-800">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-800 flex items-center justify-center">
+<span class="material-icons-round text-primary text-xl">emoji_events</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider">Top 5%</span>
+<span class="text-sm text-slate-500 dark:text-emerald-200">Consistency Score</span>
+</div>
+</div>
+<span class="material-icons-round text-emerald-400 dark:text-emerald-300">verified</span>
+</div>
+<button class="w-full bg-primary hover:bg-primary-dark active:scale-[0.98] transition-all duration-200 text-white font-bold py-4 px-6 rounded-2xl shadow-lg shadow-emerald-200 dark:shadow-none flex items-center justify-center gap-2 group">
+<span>Open Banksathi App</span>
+<span class="material-icons-round text-lg group-hover:translate-x-1 transition-transform">north_east</span>
+</button>
+</div>
+</div>
+
+</body></html>
+
+<!-- Badges Earned -->
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yearly Rewind - Efficiency Record</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<style>.bg-dot-pattern {
+            background-image: radial-gradient(#10B981 1px, transparent 1px);
+            background-size: 24px 24px;
+        }.bg-radial-soft {
+            background: radial-gradient(circle at center, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+        }
+        .dark .bg-radial-soft {
+            background: radial-gradient(circle at center, rgba(16, 185, 129, 0.25) 0%, transparent 70%);
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0FB67C", // Vibrant Emerald Green from screenshot
+                        "background-light": "#E8FBF4", // Minty light bg
+                        "background-dark": "#022C22", // Deep dark green/black
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#064E3B",
+                        "text-dark-main": "#0F172A",
+                        "text-light-main": "#F1F5F9",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    boxShadow: {
+                        'glow': '0 0 20px rgba(16, 185, 129, 0.5)',
+                        'glow-strong': '0 0 40px rgba(16, 185, 129, 0.6)',
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-100 dark:bg-gray-900 font-sans min-h-screen flex items-center justify-center p-0 sm:p-4 transition-colors duration-300">
+<div class="relative w-full max-w-[400px] bg-background-light dark:bg-background-dark sm:rounded-[40px] shadow-2xl overflow-hidden min-h-[850px] flex flex-col justify-between transition-colors duration-300">
+<div class="absolute inset-0 bg-dot-pattern opacity-[0.15] dark:opacity-[0.1] pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/50 dark:to-black/50 pointer-events-none"></div>
+<div class="relative pt-8 px-6 z-10">
+<div class="flex gap-2 mb-8">
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-primary/20"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-primary/20"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-primary/20"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-primary/20"></div>
+</div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/40 bg-primary/5 dark:bg-primary/10 text-primary font-semibold text-xs tracking-wider">
+<span class="material-icons-round text-sm" style="font-size: 16px;">auto_awesome</span>
+                YEARLY REWIND
+            </div>
+</div>
+<div class="relative flex-1 flex flex-col items-center justify-center px-6 z-10 -mt-10">
+<div class="relative w-64 h-64 flex items-center justify-center mb-10">
+<div class="absolute inset-0 rounded-full border border-dashed border-primary/20 dark:border-primary/10 animate-[spin_10s_linear_infinite]"></div>
+<div class="absolute inset-4 rounded-full border border-dashed border-primary/30 dark:border-primary/20"></div>
+<div class="absolute w-40 h-40 bg-radial-soft rounded-full"></div>
+<div class="relative w-24 h-24 bg-primary rounded-full shadow-glow-strong flex items-center justify-center transform transition hover:scale-105 duration-300">
+<div class="absolute inset-0 rounded-full border-4 border-white/20"></div>
+<span class="material-icons-round text-white text-5xl">bolt</span>
+</div>
+</div>
+<div class="text-center space-y-2">
+<h3 class="text-primary font-bold tracking-widest text-sm uppercase mb-2">Efficiency Record</h3>
+<h1 class="text-3xl font-bold text-text-dark-main dark:text-text-light-main leading-tight">
+                    Fastest time from <br/>
+<span class="text-primary">lead <span class="align-middle text-2xl">➔</span> payout</span>
+</h1>
+<div class="py-6 flex items-baseline justify-center gap-1">
+<span class="text-7xl font-bold text-text-dark-main dark:text-text-light-main tracking-tighter">12</span>
+<span class="text-3xl text-gray-400 font-medium mr-4">m</span>
+<span class="text-7xl font-bold text-text-dark-main dark:text-text-light-main tracking-tighter">04</span>
+<span class="text-3xl text-gray-400 font-medium">s</span>
+</div>
+<p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed max-w-xs mx-auto">
+                    You shattered records this year. That's <span class="font-bold text-primary">3x faster</span> than the average advisor in your region.
+                </p>
+</div>
+</div>
+<div class="relative px-6 pb-8 z-10 space-y-4">
+<div class="bg-card-light dark:bg-card-dark rounded-2xl p-4 flex items-center justify-between shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-primary">
+<span class="material-icons-round">emoji_events</span>
+</div>
+<div>
+<div class="font-bold text-text-dark-main dark:text-text-light-main text-sm">TOP 1%</div>
+<div class="text-gray-500 dark:text-gray-400 text-xs">Speed Efficiency</div>
+</div>
+</div>
+<span class="material-icons-round text-primary text-2xl">verified</span>
+</div>
+<button class="w-full bg-primary hover:bg-[#0CA670] text-white font-bold py-4 px-6 rounded-2xl flex items-center justify-center gap-2 transition-transform active:scale-95 shadow-lg shadow-primary/20">
+                Open Banksathi App
+                <span class="material-icons-round text-lg" style="font-size: 18px;">north_east</span>
+</button>
+</div>
+</div>
+<script>
+        // Simple dark mode toggle logic for demonstration purposes if viewing in browser
+        // In a real app, this would respect system preference automatically
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+
+</body></html>
+
+<!-- Welcome Slide: Hello {Name} -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BankSathi Rewind Welcome</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2bee79",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102217", // Slightly darker green tone for brand consistency
+                        "surface-dark": "#183222",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                },
+            },
+        }
+    </script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        /* Custom scrollbar hide for cleaner mobile look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-hidden selection:bg-primary selection:text-background-dark">
+<div class="relative flex h-screen w-full flex-col justify-between overflow-hidden">
+<!-- Abstract Background Elements -->
+<div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+<!-- Top Right Glow -->
+<div class="absolute top-[-10%] right-[-20%] w-[600px] h-[600px] bg-primary/10 rounded-full blur-[100px] mix-blend-screen"></div>
+<!-- Bottom Left Glow -->
+<div class="absolute bottom-[-10%] left-[-20%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] mix-blend-overlay"></div>
+<!-- Center Pattern -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-30 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay"></div>
+</div>
+<!-- Header / Nav -->
+<div class="relative z-10 w-full px-6 pt-12 pb-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<!-- Using a generic finance/bank icon to represent the logo as requested -->
+<div class="bg-white/10 p-2 rounded-full backdrop-blur-sm border border-white/5">
+<span class="material-symbols-outlined text-white" style="font-size: 24px;">account_balance_wallet</span>
+</div>
+<span class="text-white font-bold text-lg tracking-tight">BankSathi</span>
+</div>
+<!-- Optional close/skip button typically found in Stories -->
+<button class="text-white/60 hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 24px;">close</span>
+</button>
+</div>
+<!-- Main Content Area -->
+<div class="relative z-10 flex-1 flex flex-col items-center justify-center px-6 w-full max-w-md mx-auto">
+<!-- Dynamic Central Visual / Avatar Placeholder -->
+<div class="relative mb-8 group">
+<div class="absolute inset-0 bg-primary rounded-full blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
+<div class="relative w-40 h-40 rounded-full border-4 border-background-dark overflow-hidden ring-2 ring-primary/50 shadow-2xl">
+<img alt="Smiling professional advisor portrait" class="w-full h-full object-cover" data-alt="Smiling professional advisor portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmWG65ujqaoU4Wl73DT1AwS5Ea9bVUDyukj4K-AZ45CPRRhCm3XEcBsX6SoJWjm6TpQDqSHs_SlJpeJZrScB1In34DtaoBIUfjshbKZBw48uKFZvrCgR6VPS3ws48J-wlFYPUsR0vnN9Rx-GweKirUnYGOTEeL8cINsYqIE254I540xdYu8b5bh_RKIiTONZHV2_jp2XiVE8DgcmkGFp5VfMpmdL7ZTq6E-BKRXaPWYMi0sGRC4qj8PJFeQ4l2cJn9ZH5q070pxkQ"/>
+</div>
+<!-- Badge Icon -->
+<div class="absolute bottom-1 right-1 bg-primary text-background-dark p-2 rounded-full border-[3px] border-background-dark flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined" style="font-size: 20px; font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<!-- Text Content -->
+<div class="flex flex-col items-center text-center space-y-2">
+<h1 class="text-white text-4xl sm:text-5xl font-extrabold tracking-tight leading-[1.1]">
+                    Hello, <br/>
+<span class="text-primary drop-shadow-[0_0_15px_rgba(43,238,121,0.3)]">Rahul</span>
+</h1>
+<p class="text-white/70 text-lg sm:text-xl font-medium mt-4 max-w-[280px]">
+                    Your 2023 Rewind is ready. Let's see what you achieved.
+                </p>
+</div>
+</div>
+<!-- Bottom Action Area -->
+<div class="relative z-10 w-full px-6 pb-12 pt-6 flex flex-col items-center gap-6 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent">
+<!-- Primary Action Button -->
+<button class="group relative w-full max-w-[320px] h-14 flex items-center justify-center bg-primary hover:bg-[#1fd665] text-background-dark font-bold text-lg rounded-full transition-all duration-300 transform active:scale-95 shadow-[0_0_20px_rgba(43,238,121,0.4)] hover:shadow-[0_0_30px_rgba(43,238,121,0.6)]">
+<span class="mr-2">Start the Journey</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform duration-300">arrow_forward</span>
+</button>
+<!-- Secondary/Privacy note -->
+<div class="flex items-center gap-1 text-white/30 text-xs font-medium">
+<span class="material-symbols-outlined" style="font-size: 14px;">lock</span>
+<span>Private to you</span>
+</div>
+</div>
+</div>
+</body></html>
+
+<!-- Badges Earned -->
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yearly Rewind - Badges Earned</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<style>.bg-dot-pattern {
+            background-image: radial-gradient(#10B981 1px, transparent 1px);
+            background-size: 24px 24px;
+        }.bg-radial-soft {
+            background: radial-gradient(circle at center, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+        }
+        .dark .bg-radial-soft {
+            background: radial-gradient(circle at center, rgba(16, 185, 129, 0.25) 0%, transparent 70%);
+        }@keyframes shine {
+            0% { left: -100%; opacity: 0; }
+            50% { opacity: 0.5; }
+            100% { left: 200%; opacity: 0; }
+        }
+        .shine-effect {
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.4), transparent);
+            transform: skewX(-20deg);
+            animation: shine 3s infinite;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0FB67C", // Vibrant Emerald Green
+                        "background-light": "#E8FBF4", // Minty light bg
+                        "background-dark": "#022C22", // Deep dark green/black
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#064E3B",
+                        "text-dark-main": "#0F172A",
+                        "text-light-main": "#F1F5F9",
+                        "gold": "#FCD34D",
+                        "gold-dark": "#D97706",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    boxShadow: {
+                        'glow': '0 0 20px rgba(16, 185, 129, 0.5)',
+                        'glow-strong': '0 0 40px rgba(16, 185, 129, 0.6)',
+                        'gold-glow': '0 0 30px rgba(252, 211, 77, 0.4)',
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-100 dark:bg-gray-900 font-sans min-h-screen flex items-center justify-center p-0 sm:p-4 transition-colors duration-300">
+<div class="relative w-full max-w-[400px] bg-background-light dark:bg-background-dark sm:rounded-[40px] shadow-2xl overflow-hidden min-h-[850px] flex flex-col justify-between transition-colors duration-300">
+<div class="absolute inset-0 bg-dot-pattern opacity-[0.15] dark:opacity-[0.1] pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/50 dark:to-black/50 pointer-events-none"></div>
+<div class="relative pt-8 px-6 z-10">
+<div class="flex gap-2 mb-8">
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-primary/20"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-primary/20"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-primary/20"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary/30 dark:bg-primary/20"></div>
+</div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/40 bg-primary/5 dark:bg-primary/10 text-primary font-semibold text-xs tracking-wider">
+<span class="material-icons-round text-sm" style="font-size: 16px;">auto_awesome</span>
+                YEARLY REWIND
+            </div>
+</div>
+<div class="relative flex-1 flex flex-col items-center justify-center px-6 z-10 -mt-10">
+<div class="relative w-72 h-72 flex items-center justify-center mb-8">
+<div class="absolute inset-0 rounded-full border border-dashed border-primary/20 dark:border-primary/10 animate-[spin_15s_linear_infinite]"></div>
+<div class="absolute inset-8 rounded-full border border-dashed border-primary/30 dark:border-primary/20"></div>
+<div class="absolute w-56 h-56 bg-radial-soft rounded-full"></div>
+<div class="relative w-32 h-32 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full shadow-gold-glow flex items-center justify-center transform transition hover:scale-105 duration-300 overflow-hidden">
+<div class="absolute inset-0 rounded-full border-4 border-white/30"></div>
+<div class="shine-effect"></div>
+<span class="material-icons-round text-white text-6xl drop-shadow-md">emoji_events</span>
+</div>
+<span class="absolute top-10 left-10 text-primary/40 material-icons-round text-xl animate-bounce" style="animation-delay: 0.1s">star</span>
+<span class="absolute bottom-12 right-12 text-yellow-400/60 material-icons-round text-2xl animate-bounce" style="animation-delay: 0.5s">star</span>
+<span class="absolute top-16 right-16 text-primary/30 material-icons-round text-sm animate-bounce" style="animation-delay: 0.3s">circle</span>
+</div>
+<div class="text-center space-y-4">
+<h3 class="text-primary font-bold tracking-widest text-sm uppercase mb-1">Badges Earned</h3>
+<h1 class="text-4xl font-bold text-text-dark-main dark:text-text-light-main leading-tight mb-2">
+                    Efficiency Expert
+                </h1>
+<p class="text-gray-500 dark:text-gray-400 font-medium text-sm">
+                    Earned badge on <span class="text-primary font-bold">December 2025</span>
+</p>
+<div class="py-4"></div>
+<p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed max-w-xs mx-auto">
+                    Your consistent speed and accuracy have set a new standard for excellence this year.
+                </p>
+</div>
+</div>
+<div class="relative px-6 pb-8 z-10 space-y-4">
+<div class="bg-card-light dark:bg-card-dark rounded-2xl p-4 flex items-center justify-between shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-yellow-100 dark:bg-yellow-900/30 flex items-center justify-center text-yellow-600 dark:text-yellow-400">
+<span class="material-icons-round">workspace_premium</span>
+</div>
+<div>
+<div class="font-bold text-text-dark-main dark:text-text-light-main text-sm">ELITE TIER</div>
+<div class="text-gray-500 dark:text-gray-400 text-xs">Top 5% Advisor</div>
+</div>
+</div>
+<span class="material-icons-round text-primary text-2xl">verified</span>
+</div>
+<button class="w-full bg-primary hover:bg-[#0CA670] text-white font-bold py-4 px-6 rounded-2xl flex items-center justify-center gap-2 transition-transform active:scale-95 shadow-lg shadow-primary/20">
+                View All Badges
+                <span class="material-icons-round text-lg" style="font-size: 18px;">north_east</span>
+</button>
+</div>
+</div>
+<script>
+        // Simple dark mode toggle logic for demonstration purposes if viewing in browser
+        // In a real app, this would respect system preference automatically
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body></html>
+
+<!-- Outro: Thank You! -->
+<html lang="en"><head><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 h-screen w-full overflow-hidden flex flex-col relative transition-colors duration-300">```html
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yearly Rewind - Outro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0DBB7C", // The vibrant green from the screenshot
+                        secondary: "#089060", // Darker shade for gradients/borders
+                        "background-light": "#E8FBF4", // Very light mint green background
+                        "background-dark": "#051F18", // Dark deep green for dark mode
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#0A2A22",
+                        "text-dark": "#1A1A1A",
+                        "text-light": "#F0FDF4",
+                        "accent-green": "#D1FBE9", // Light green for pills/badges
+                    },
+                    fontFamily: {
+                        display: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        'xl': "1.5rem",
+                        '2xl': "2rem",
+                        '3xl': "3rem",
+                    },
+                    backgroundImage: {
+                        'gradient-light': 'radial-gradient(circle at 50% 30%, #D1FBE9 0%, #E8FBF4 70%)',
+                        'gradient-dark': 'radial-gradient(circle at 50% 30%, #0A2A22 0%, #051F18 70%)',
+                    }
+                },
+            },
+        };
+    </script>
+<style>.bg-pattern {
+            background-image: radial-gradient(#0DBB7C 1px, transparent 1px);
+            background-size: 24px 24px;
+            opacity: 0.1;
+        }
+        .dark .bg-pattern {
+            opacity: 0.05;
+        }@keyframes progress {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+        .animate-progress {
+            animation: progress 3s linear forwards;
+        }
+    </style>
+
+
+<div class="absolute inset-0 bg-gradient-light dark:bg-gradient-dark -z-20"></div>
+<div class="absolute inset-0 bg-pattern -z-10 pointer-events-none"></div>
+<div class="w-full h-12 flex items-end justify-between px-6 pb-2 text-xs font-medium text-gray-500 dark:text-gray-400">
+<div class="absolute top-4 left-0 right-0 px-4 flex gap-2 w-full max-w-md mx-auto z-20">
+<div class="h-1 bg-primary/20 rounded-full flex-1 overflow-hidden">
+<div class="h-full bg-primary w-full"></div>
+</div>
+<div class="h-1 bg-primary/20 rounded-full flex-1 overflow-hidden">
+<div class="h-full bg-primary w-full"></div>
+</div>
+<div class="h-1 bg-primary/20 rounded-full flex-1 overflow-hidden">
+<div class="h-full bg-primary w-full"></div>
+</div>
+<div class="h-1 bg-primary/20 rounded-full flex-1 overflow-hidden">
+<div class="h-full bg-primary w-full"></div>
+</div>
+<div class="h-1 bg-primary/20 rounded-full flex-1 overflow-hidden">
+<div class="h-full bg-primary w-full animate-progress"></div>
+</div>
+</div>
+</div>
+<main class="flex-1 flex flex-col px-6 pt-4 pb-8 relative z-10 max-w-md mx-auto w-full h-full justify-between">
+<div class="flex flex-col items-start space-y-8 animate-fade-in-up">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs font-bold tracking-wide uppercase shadow-sm backdrop-blur-sm dark:bg-primary/10 dark:text-primary dark:border-primary/40">
+<span class="material-icons-round text-sm">auto_awesome</span>
+                Yearly Rewind
+            </div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white">
+<span class="material-icons-round text-lg">currency_rupee</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Banksathi</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center space-y-6 flex-1 justify-center">
+<div class="relative mb-6">
+<div class="absolute inset-0 -m-8 border-2 border-dashed border-primary/20 rounded-full animate-spin-slow" style="animation-duration: 20s;"></div>
+<div class="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-lg shadow-primary/30 relative z-10 transform transition hover:scale-105 duration-300">
+<span class="material-icons-round text-5xl text-white">celebration</span>
+</div>
+<div class="absolute -top-4 -right-2 text-primary animate-bounce" style="animation-delay: 0.2s">✦</div>
+<div class="absolute -bottom-2 -left-4 text-primary animate-bounce" style="animation-delay: 0.5s">✦</div>
+</div>
+<div class="space-y-2">
+<h2 class="text-primary font-bold text-sm tracking-widest uppercase">Thank You!</h2>
+<h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">
+                    Let's crush it <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400">in 2026.</span>
+</h1>
+</div>
+<p class="text-gray-600 dark:text-gray-300 text-sm md:text-base max-w-xs leading-relaxed">
+                You've set a new standard for excellence this year. We can't wait to see what heights you'll reach next.
+            </p>
+<div class="w-full mt-4 bg-white dark:bg-card-dark rounded-2xl p-4 flex items-center justify-between shadow-sm border border-gray-100 dark:border-gray-800 backdrop-blur-md bg-opacity-80 dark:bg-opacity-80">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-accent-green dark:bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-icons-round text-xl">emoji_events</span>
+</div>
+<div class="text-left">
+<div class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Performance</div>
+<div class="font-bold text-gray-900 dark:text-white">Top 1% Advisor</div>
+</div>
+</div>
+<span class="material-icons-round text-primary text-xl">verified</span>
+</div>
+</div>
+<div class="mt-8 space-y-4 w-full">
+<button class="group w-full bg-primary hover:bg-secondary text-white font-bold text-lg py-4 px-6 rounded-2xl shadow-lg shadow-primary/25 transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2">
+                Open Banksathi App
+                <span class="material-icons-round text-base transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">arrow_outward</span>
+</button>
+<div class="flex justify-center gap-4 pt-2 pb-4">
+<button class="p-3 rounded-full bg-white dark:bg-card-dark text-gray-600 dark:text-gray-300 shadow-sm border border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<span class="material-icons-round block">share</span>
+</button>
+<button class="p-3 rounded-full bg-white dark:bg-card-dark text-gray-600 dark:text-gray-300 shadow-sm border border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<span class="material-icons-round block">download</span>
+</button>
+</div>
+</div>
+</main>
+<script>
+        // Simple dark mode toggle for demonstration (optional, usually handled by OS)
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+
+</body></html>
+
+<!-- Joined Date Variant -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bankssathi Wrapped - Joined Date</title>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-hidden">
+<div class="relative flex h-screen w-full flex-col max-w-md mx-auto overflow-hidden">
+<!-- Background Effects -->
+<div class="absolute top-[-10%] right-[-10%] w-64 h-64 bg-primary/10 rounded-full blur-[80px] pointer-events-none"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-80 h-80 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+<!-- Page Indicators -->
+<div class="flex w-full flex-row items-center justify-center gap-2 px-4 py-6 z-20">
+<div class="h-1 flex-1 rounded-full bg-white/20"></div>
+<div class="h-1 flex-1 rounded-full bg-white/20"></div>
+<div class="h-1 flex-1 rounded-full bg-primary shadow-[0_0_10px_rgba(19,236,91,0.5)]"></div>
+<div class="h-1 flex-1 rounded-full bg-white/20"></div>
+<div class="h-1 flex-1 rounded-full bg-white/20"></div>
+</div>
+<!-- Top App Bar -->
+<div class="flex items-center justify-between px-6 pb-2 z-20">
+<!-- Brand Logo Area -->
+<div class="flex items-center gap-2 text-white">
+<div class="bg-white/10 p-1.5 rounded-lg backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span>
+</div>
+<span class="font-bold text-sm tracking-wide uppercase opacity-90">Bankssathi</span>
+</div>
+<!-- Close Button -->
+<button class="flex size-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors backdrop-blur-md">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Main Content (Hero) -->
+<div class="flex-1 flex flex-col items-center justify-center relative z-10 w-full px-6">
+<!-- Floating Decorative Confetti Elements (Abstract) -->
+<div class="absolute top-1/4 left-10 text-primary/40 animate-pulse">
+<span class="material-symbols-outlined text-2xl rotate-12">star</span>
+</div>
+<div class="absolute bottom-1/3 right-8 text-white/20">
+<span class="material-symbols-outlined text-3xl -rotate-12">favorite</span>
+</div>
+<div class="absolute top-1/3 right-12 text-primary/30">
+<span class="material-symbols-outlined text-xl rotate-45">change_history</span>
+</div>
+<!-- Central Visual -->
+<div class="relative mb-10 group">
+<!-- Glow Effect -->
+<div class="absolute inset-0 bg-primary/30 blur-[60px] rounded-full scale-150 animate-pulse"></div>
+<!-- Main Icon -->
+<div class="relative bg-gradient-to-br from-white/10 to-transparent p-8 rounded-[2.5rem] border border-white/10 backdrop-blur-sm shadow-2xl">
+<span class="material-symbols-outlined text-[100px] text-primary drop-shadow-[0_0_15px_rgba(19,236,91,0.6)]" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;">
+                        celebration
+                    </span>
+</div>
+<!-- Small floating badge -->
+<div class="absolute -bottom-4 -right-4 bg-background-dark border border-white/10 px-4 py-2 rounded-full shadow-xl flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+<span class="text-white text-xs font-bold tracking-wider">MEMBER</span>
+</div>
+</div>
+<!-- Text Content -->
+<div class="text-center flex flex-col items-center gap-1">
+<h2 class="text-white/90 text-xl font-medium tracking-wide">You joined in</h2>
+<h1 class="text-primary text-[48px] leading-tight font-black tracking-tight drop-shadow-sm py-2">
+                    July 2021
+                </h1>
+<p class="text-white/60 text-base font-medium max-w-[200px] mt-2 leading-relaxed">
+                    And the journey began! Thanks for being with us.
+                </p>
+</div>
+</div>
+<!-- Footer / Share Action -->
+<div class="w-full p-6 pb-10 z-20">
+<button class="group relative w-full flex items-center justify-center gap-3 bg-primary hover:bg-[#0fd651] active:scale-[0.98] transition-all duration-200 py-4 px-6 rounded-full shadow-[0_0_20px_rgba(19,236,91,0.3)]">
+<span class="material-symbols-outlined text-background-dark text-[24px]">ios_share</span>
+<span class="text-background-dark font-bold text-lg tracking-wide">Share this milestone</span>
+</button>
+</div>
+</div>
+</body></html>
