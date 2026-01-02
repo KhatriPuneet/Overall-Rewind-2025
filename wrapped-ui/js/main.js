@@ -51,10 +51,18 @@ class WrappedApp {
             this.replay();
         });
 
-        // Swipe to open button
-        document.querySelector('.swipe-to-open')?.addEventListener('click', () => {
+        // Swipe to open button - two-step interaction
+        const swipeToOpen = document.querySelector('.swipe-to-open');
+        swipeToOpen?.addEventListener('click', (e) => {
             if (this.currentSlide === 0) {
-                this.nextSlide();
+                if (!swipeToOpen.classList.contains('expanded')) {
+                    // First click: expand the component
+                    swipeToOpen.classList.add('expanded');
+                    e.stopPropagation(); // Prevent tap area from triggering
+                } else {
+                    // Second click: navigate to next slide
+                    this.nextSlide();
+                }
             }
         });
     }
