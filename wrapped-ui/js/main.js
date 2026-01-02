@@ -45,6 +45,11 @@ class WrappedApp {
             window.soundManager.toggleMute();
             document.getElementById('sound-toggle').classList.toggle('muted');
         });
+
+        // Replay button
+        document.getElementById('replay-btn')?.addEventListener('click', () => {
+            this.replay();
+        });
     }
 
     handleTouchStart(e) {
@@ -183,6 +188,30 @@ class WrappedApp {
 
             this.quizActive = true;
         }
+    }
+
+    replay() {
+        // Mark all quizzes as completed so they won't show during replay
+        for (let i = 0; i < this.totalSlides; i++) {
+            this.completedQuizzes.add(i);
+        }
+
+        // Reset to first slide
+        const currentSlideEl = document.querySelector(`.slide[data-slide="${this.currentSlide}"]`);
+        currentSlideEl?.classList.remove('active');
+
+        // Clear all previous states
+        document.querySelectorAll('.slide').forEach(slide => {
+            slide.classList.remove('active', 'prev');
+        });
+
+        // Go to first slide
+        this.currentSlide = 0;
+        this.showSlide(0);
+
+        // Play sound
+        window.soundManager.play('swipe');
+        window.hapticManager.light();
     }
 }
 
