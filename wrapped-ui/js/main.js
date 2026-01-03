@@ -4,18 +4,33 @@ class WrappedApp {
         this.currentSlide = 0;
         this.totalSlides = 12;
         this.isTransitioning = false;
-        this.touchStartX = 0;
-        this.touchStartY = 0;
         this.quizActive = false;
         this.completedQuizzes = new Set(); // Track which slides have had quiz completed
 
+        // Touch tracking
+        this.touchStartX = 0;
+        this.touchStartY = 0;
+
+        // Vertical drag state for slide 0
+        this.isDraggingVertical = false;
+        this.dragStartY = 0;
+        this.currentDragY = 0;
+        this.dragThreshold = 0.3; // 30% of screen height
+
+        this.slideTimer = null; // Timer for auto-advancing slides
+
         this.init();
+
+        // Track App Open
+        if (window.posthog) {
+            posthog.capture('opened_rewind_overall_2025');
+        }
     }
 
     init() {
         this.setupEventListeners();
-        this.updateProgressBars();
         this.showSlide(0);
+        window.animationManager.revealSlideContent(0);
 
         // Auto-show quiz for slides that have them
         setTimeout(() => {
@@ -30,20 +45,29 @@ class WrappedApp {
         document.addEventListener('touchend', this.handleTouchEnd.bind(this));
 
         // Tap areas for navigation
-        document.getElementById('tap-left')?.addEventListener('click', () => this.prevSlide());
-        document.getElementById('tap-right')?.addEventListener('click', () => this.nextSlide());
+        document.getElementById('tap-left')?.addEventListener('click', () => this.prevSlide('tap'));
+        document.getElementById('tap-right')?.addEventListener('click', () => this.nextSlide('tap'));
 
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
             if (this.quizActive) return;
-            if (e.key === 'ArrowLeft') this.prevSlide();
-            if (e.key === 'ArrowRight') this.nextSlide();
+            if (e.key === 'ArrowLeft') this.prevSlide('tap');
+            if (e.key === 'ArrowRight') this.nextSlide('tap');
         });
 
         // Sound toggle
         document.getElementById('sound-toggle')?.addEventListener('click', () => {
             window.soundManager.toggleMute();
-            document.getElementById('sound-toggle').classList.toggle('muted');
+            const soundBtn = document.getElementById('sound-toggle');
+            const icon = soundBtn.querySelector('.material-symbols-outlined');
+            soundBtn.classList.toggle('muted');
+
+            // Change icon based on muted state
+            if (soundBtn.classList.contains('muted')) {
+                icon.textContent = 'volume_off';
+            } else {
+                icon.textContent = 'volume_up';
+            }
         });
 
         // Replay button
@@ -51,10 +75,11 @@ class WrappedApp {
             this.replay();
         });
 
-        // Swipe to open button
-        document.querySelector('.swipe-to-open')?.addEventListener('click', () => {
+        // Swipe to open button - trigger vertical transition animation
+        document.querySelector('.swipe-container')?.addEventListener('click', () => {
             if (this.currentSlide === 0) {
-                this.nextSlide();
+                // Simulate a swipe-up by triggering the vertical transition
+                this.completeVerticalTransition();
             }
         });
     }
@@ -63,18 +88,38 @@ class WrappedApp {
         if (this.quizActive) return;
         this.touchStartX = e.touches[0].clientX;
         this.touchStartY = e.touches[0].clientY;
+
+        // Initialize vertical drag state for slide 0
+        if (this.currentSlide === 0) {
+            this.dragStartY = e.touches[0].clientY;
+            this.isDraggingVertical = false; // Will be set to true in touchmove if vertical
+        }
     }
 
     handleTouchMove(e) {
         if (this.quizActive) return;
-        // Prevent default to avoid scrolling while swiping
+
         const touchX = e.touches[0].clientX;
         const touchY = e.touches[0].clientY;
-        const diffX = Math.abs(touchX - this.touchStartX);
-        const diffY = Math.abs(touchY - this.touchStartY);
+        const diffX = touchX - this.touchStartX;
+        const diffY = touchY - this.touchStartY;
+        const absDiffX = Math.abs(diffX);
+        const absDiffY = Math.abs(diffY);
 
-        // If horizontal swipe is more significant than vertical
-        if (diffX > diffY && diffX > 10) {
+        // On slide 0, handle vertical drag for reveal
+        if (this.currentSlide === 0 && diffY < -20 && absDiffY > absDiffX) {
+            // User is dragging up on slide 0
+            this.isDraggingVertical = true;
+            e.preventDefault();
+
+            const dragDistance = this.touchStartY - touchY;
+            this.currentDragY = dragDistance;
+
+            // Apply progressive transform
+            this.handleVerticalDrag(dragDistance);
+        }
+        // Horizontal swipe detection for other slides
+        else if (absDiffX > absDiffY && absDiffX > 10) {
             e.preventDefault();
         }
     }
@@ -82,6 +127,25 @@ class WrappedApp {
     handleTouchEnd(e) {
         if (this.quizActive) return;
 
+        // Handle vertical drag on slide 0
+        if (this.currentSlide === 0 && this.isDraggingVertical) {
+            const screenHeight = window.innerHeight;
+            const dragPercentage = this.currentDragY / screenHeight;
+
+            if (dragPercentage >= this.dragThreshold) {
+                // Complete transition to next slide
+                this.completeVerticalTransition();
+            } else {
+                // Snap back to original position
+                this.cancelVerticalDrag();
+            }
+
+            this.isDraggingVertical = false;
+            this.currentDragY = 0;
+            return;
+        }
+
+        // Handle horizontal swipes
         const touchEndX = e.changedTouches[0].clientX;
         const touchEndY = e.changedTouches[0].clientY;
         const diffX = touchEndX - this.touchStartX;
@@ -91,36 +155,53 @@ class WrappedApp {
         if (Math.abs(diffX) > Math.abs(diffY)) {
             if (diffX > 50) {
                 // Swipe right - go to previous slide
-                this.prevSlide();
+                this.prevSlide('swipe');
             } else if (diffX < -50) {
                 // Swipe left - go to next slide
-                this.nextSlide();
+                this.nextSlide('swipe');
             }
-        } else if (this.currentSlide === 0 && diffY < -50) {
-            // Swipe up on intro slide
-            this.nextSlide();
         }
     }
 
-    nextSlide() {
+    nextSlide(method = 'swipe') {
         if (this.isTransitioning || this.quizActive) return;
+
+        // Disable tap navigation on first slide (must swipe up or click button)
+        if (method === 'tap' && this.currentSlide === 0) return;
+
+        // Haptic feedback for tap interactions
+        if (method === 'tap') {
+            window.hapticManager.light();
+        }
+
         if (this.currentSlide < this.totalSlides - 1) {
-            this.goToSlide(this.currentSlide + 1);
+            this.goToSlide(this.currentSlide + 1, method);
         }
     }
 
-    prevSlide() {
+    prevSlide(method = 'swipe') {
         if (this.isTransitioning || this.quizActive) return;
+
+        // Disable tap navigation on first slide
+        if (method === 'tap' && this.currentSlide === 0) return;
+
+        // Haptic feedback for tap interactions
+        if (method === 'tap') {
+            window.hapticManager.light();
+        }
+
         if (this.currentSlide > 0) {
-            this.goToSlide(this.currentSlide - 1);
+            this.goToSlide(this.currentSlide - 1, method);
         }
     }
 
-    goToSlide(index) {
+    goToSlide(index, method = 'swipe') {
         if (this.isTransitioning || index === this.currentSlide) return;
 
         this.isTransitioning = true;
         const direction = index > this.currentSlide ? 'next' : 'prev';
+        const isTap = method === 'tap';
+        const transitionDuration = isTap ? 300 : 600;
 
         // Play swipe sound
         window.soundManager.play('swipe');
@@ -130,15 +211,30 @@ class WrappedApp {
 
         // Hide current slide
         const currentSlideEl = document.querySelector(`.slide[data-slide="${this.currentSlide}"]`);
-        currentSlideEl?.classList.remove('active');
-        if (direction === 'next') {
-            currentSlideEl?.classList.add('prev');
+
+        if (currentSlideEl) {
+            currentSlideEl.classList.remove('active');
+
+            // Add snap class if it's a tap interaction
+            if (isTap) currentSlideEl.classList.add('snap');
+            else currentSlideEl.classList.remove('snap');
+
+            if (direction === 'next') {
+                currentSlideEl.classList.add('prev');
+            }
         }
 
         // Show new slide
         const newSlideEl = document.querySelector(`.slide[data-slide="${index}"]`);
-        newSlideEl?.classList.remove('prev');
-        newSlideEl?.classList.add('active');
+        if (newSlideEl) {
+            newSlideEl.classList.remove('prev');
+
+            // Add snap class if it's a tap interaction
+            if (isTap) newSlideEl.classList.add('snap');
+            else newSlideEl.classList.remove('snap');
+
+            newSlideEl.classList.add('active');
+        }
 
         this.currentSlide = index;
         this.updateProgressBars();
@@ -147,11 +243,36 @@ class WrappedApp {
         setTimeout(() => {
             window.animationManager.animateSlide(index);
             this.checkAndShowQuiz();
-        }, 100);
+            this.startSlideTimer(); // Start auto-advance timer
+
+            // Track Rewind Viewed (Reached Last Slide)
+            if (index === this.totalSlides - 1 && window.posthog) {
+                posthog.capture('viewed_rewind_overall_2025');
+            }
+        }, isTap ? 50 : 100);
 
         setTimeout(() => {
             this.isTransitioning = false;
-        }, 600);
+            // Clean up snap classes
+            const allSlides = document.querySelectorAll('.slide');
+            allSlides.forEach(slide => slide.classList.remove('snap'));
+        }, transitionDuration);
+    }
+
+    startSlideTimer() {
+        // Clear any existing timer
+        if (this.slideTimer) clearTimeout(this.slideTimer);
+
+        // Don't auto-advance on first and last slide
+        if (this.currentSlide === 0 || this.currentSlide === this.totalSlides - 1) return;
+
+        // Don't auto-advance if quiz is active (will be handled by checkAndShowQuiz)
+        if (this.quizActive) return;
+
+        // Set timer for 3.5 seconds
+        this.slideTimer = setTimeout(() => {
+            this.nextSlide('auto');
+        }, 3500);
     }
 
     showSlide(index) {
@@ -166,6 +287,17 @@ class WrappedApp {
     }
 
     updateProgressBars() {
+        const container = document.getElementById('progress-bars');
+        if (container) {
+            if (this.currentSlide === 0 || this.currentSlide === this.totalSlides - 1) {
+                container.style.opacity = '0';
+                container.style.pointerEvents = 'none'; // Prevent interaction when hidden
+            } else {
+                container.style.opacity = '1';
+                container.style.pointerEvents = 'auto';
+            }
+        }
+
         const bars = document.querySelectorAll('.progress-bar');
         bars.forEach((bar, index) => {
             bar.classList.remove('active', 'completed');
@@ -191,9 +323,29 @@ class WrappedApp {
                 this.quizActive = false;
                 this.completedQuizzes.add(this.currentSlide); // Mark quiz as completed
                 window.animationManager.revealSlideContent(this.currentSlide);
+
+                // Resume progress bar and timer
+                const activeBar = document.querySelector(`.progress-bar[data-slide="${this.currentSlide}"]`);
+                if (activeBar) activeBar.classList.remove('paused');
+
+                // Give user time to see results before advancing
+                this.slideTimer = setTimeout(() => {
+                    this.nextSlide('auto');
+                }, 3000);
             });
 
             this.quizActive = true;
+
+            // Pause progress bar
+            const activeBar = document.querySelector(`.progress-bar[data-slide="${this.currentSlide}"]`);
+            if (activeBar) activeBar.classList.add('paused');
+
+            if (this.slideTimer) clearTimeout(this.slideTimer);
+
+        } else {
+            // No quiz or already completed - reveal content immediately
+            window.animationManager.revealSlideContent(this.currentSlide);
+            this.startSlideTimer();
         }
     }
 
@@ -219,6 +371,79 @@ class WrappedApp {
         // Play sound
         window.soundManager.play('swipe');
         window.hapticManager.light();
+    }
+
+    handleVerticalDrag(dragDistance) {
+        const screenHeight = window.innerHeight;
+        const dragPercentage = Math.min(dragDistance / screenHeight, 1);
+
+        const slide0 = document.querySelector('.slide[data-slide="0"]');
+        const slide1 = document.querySelector('.slide[data-slide="1"]');
+
+        if (!slide0 || !slide1) return;
+
+        // Add dragging class to disable transitions
+        slide0.classList.add('dragging');
+
+        // Move slide 0 up based on drag
+        const translateY = -dragDistance;
+        slide0.style.transform = `translateY(${translateY}px)`;
+
+        // Show slide 1 behind slide 0
+        slide1.classList.add('revealing');
+    }
+
+    completeVerticalTransition() {
+        const slide0 = document.querySelector('.slide[data-slide="0"]');
+        const slide1 = document.querySelector('.slide[data-slide="1"]');
+
+        if (!slide0 || !slide1) return;
+
+        // Remove dragging class to enable smooth transition
+        slide0.classList.remove('dragging');
+
+        // Animate slide 0 completely off screen
+        slide0.style.transform = 'translateY(-100%)';
+
+        // Wait for animation, then switch to slide 1
+        setTimeout(() => {
+            slide0.classList.remove('active');
+            slide0.classList.remove('dragging');
+            slide0.style.transform = '';
+
+            // Promote slide 1 from revealing to active
+            slide1.classList.remove('revealing');
+            slide1.classList.add('active');
+
+            this.currentSlide = 1;
+            this.updateProgressBars();
+
+            // Animate slide content
+            window.animationManager.animateSlide(1);
+            this.checkAndShowQuiz();
+
+            window.soundManager.play('swipe');
+            window.hapticManager.light();
+        }, 800);
+    }
+
+    cancelVerticalDrag() {
+        const slide0 = document.querySelector('.slide[data-slide="0"]');
+        const slide1 = document.querySelector('.slide[data-slide="1"]');
+
+        if (!slide0 || !slide1) return;
+
+        // Remove dragging class to enable smooth transition back
+        slide0.classList.remove('dragging');
+
+        // Animate back to original position
+        slide0.style.transform = 'translateY(0)';
+
+        // Wait for animation, then clean up
+        setTimeout(() => {
+            slide1.classList.remove('revealing');
+            slide0.style.transform = '';
+        }, 300);
     }
 }
 
