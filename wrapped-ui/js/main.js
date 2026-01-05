@@ -269,10 +269,10 @@ class WrappedApp {
         // Don't auto-advance if quiz is active (will be handled by checkAndShowQuiz)
         if (this.quizActive) return;
 
-        // Set timer for 3.5 seconds
+        // Set timer for 5 seconds
         this.slideTimer = setTimeout(() => {
             this.nextSlide('auto');
-        }, 3500);
+        }, 5000);
     }
 
     showSlide(index) {
@@ -328,10 +328,10 @@ class WrappedApp {
                 const activeBar = document.querySelector(`.progress-bar[data-slide="${this.currentSlide}"]`);
                 if (activeBar) activeBar.classList.remove('paused');
 
-                // Give user time to see results before advancing
+                // Give user time to see results before advancing - 5 seconds
                 this.slideTimer = setTimeout(() => {
                     this.nextSlide('auto');
-                }, 3000);
+                }, 5000);
             });
 
             this.quizActive = true;
@@ -422,7 +422,7 @@ class WrappedApp {
             window.animationManager.animateSlide(1);
             this.checkAndShowQuiz();
 
-            window.soundManager.play('swipe');
+            window.soundManager.play('techno');
             window.hapticManager.light();
         }, 800);
     }

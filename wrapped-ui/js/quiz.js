@@ -8,6 +8,8 @@ class QuizManager {
         this.currentAnswer = null;
         this.onComplete = null;
         this.answered = false;
+        this.timeoutTimer = null;
+        this.timerBar = null;
 
         this.init();
     }
@@ -57,10 +59,51 @@ class QuizManager {
         if (currentSlide) {
             currentSlide.classList.add('quiz-blur');
         }
+
+        // Initialize or reset timeout bar
+        if (!this.timerBar) {
+            this.timerBar = document.createElement('div');
+            this.timerBar.className = 'quiz-timeout-bar';
+            const quizContent = this.overlay.querySelector('.quiz-content');
+            if (quizContent) {
+                // Prepend to make it the first child for sticky positioning
+                quizContent.insertBefore(this.timerBar, quizContent.firstChild);
+            } else {
+                this.overlay.appendChild(this.timerBar);
+            }
+        }
+
+        // Reset animation
+        this.timerBar.style.transition = 'none';
+        this.timerBar.style.width = '100%';
+
+        // Force reflow
+        this.timerBar.offsetHeight;
+
+        // Start 3s countdown
+        this.timerBar.style.transition = 'width 3s linear';
+        this.timerBar.style.width = '0%';
+
+        // Set auto-dismiss timer
+        if (this.timeoutTimer) clearTimeout(this.timeoutTimer);
+        this.timeoutTimer = setTimeout(() => {
+            if (!this.answered) {
+                this.skip();
+            }
+        }, 3000);
     }
 
     selectOption(index, optionBtn) {
         if (this.answered) return;
+
+        // Stop timer
+        if (this.timeoutTimer) clearTimeout(this.timeoutTimer);
+        if (this.timerBar) {
+            // Freeze bar at current position
+            const width = this.timerBar.offsetWidth;
+            this.timerBar.style.transition = 'none';
+            this.timerBar.style.width = `${width}px`;
+        }
 
         this.answered = true;
         const isCorrect = index === this.currentAnswer;
@@ -104,6 +147,8 @@ class QuizManager {
     }
 
     hide() {
+        if (this.timeoutTimer) clearTimeout(this.timeoutTimer);
+
         // Remove blur class from slide
         const currentSlide = document.querySelector('.slide.active');
         if (currentSlide) {

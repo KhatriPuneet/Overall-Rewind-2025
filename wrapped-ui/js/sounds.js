@@ -102,6 +102,47 @@ class SoundManager {
                 }
             }
         };
+
+        // Techno start sound - futuristic swell
+        this.sounds.techno = {
+            play: () => {
+                if (!this.muted) {
+                    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+                    // Bass oscillator
+                    const osc1 = audioContext.createOscillator();
+                    const gain1 = audioContext.createGain();
+                    osc1.connect(gain1);
+                    gain1.connect(audioContext.destination);
+
+                    osc1.type = 'sawtooth';
+                    osc1.frequency.setValueAtTime(100, audioContext.currentTime);
+                    osc1.frequency.exponentialRampToValueAtTime(50, audioContext.currentTime + 0.5);
+
+                    gain1.gain.setValueAtTime(0.3, audioContext.currentTime);
+                    gain1.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+
+                    // High pitch sweep
+                    const osc2 = audioContext.createOscillator();
+                    const gain2 = audioContext.createGain();
+                    osc2.connect(gain2);
+                    gain2.connect(audioContext.destination);
+
+                    osc2.type = 'square';
+                    osc2.frequency.setValueAtTime(400, audioContext.currentTime);
+                    osc2.frequency.linearRampToValueAtTime(800, audioContext.currentTime + 0.1);
+                    osc2.frequency.linearRampToValueAtTime(200, audioContext.currentTime + 0.4);
+
+                    gain2.gain.setValueAtTime(0.1, audioContext.currentTime);
+                    gain2.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.4);
+
+                    osc1.start(audioContext.currentTime);
+                    osc1.stop(audioContext.currentTime + 0.5);
+                    osc2.start(audioContext.currentTime);
+                    osc2.stop(audioContext.currentTime + 0.5);
+                }
+            }
+        };
     }
 
     play(soundName) {
